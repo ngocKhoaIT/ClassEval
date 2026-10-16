@@ -1,0 +1,5 @@
+# Windows with an NVIDIA GPU. Install alongside requirements.txt using:
+# python -m pip install -r requirements-gpu.txt
+-r requirements.txt
+--extra-index-url https://download.pytorch.org/whl/cu124
+torch==2.5.1+cu124

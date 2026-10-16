@@ -1,0 +1,26 @@
+{
+    "ClassEval_0": {
+        "ClassEval_0_0": {
+            "AccessGatewayFilterTest": {
+                "errors": 0,
+                "failures": 1,
+                "testsRun": 1
+            },
+            "AccessGatewayFilterTestFilter": {
+                "errors": 0,
+                "failures": 7,
+                "testsRun": 8
+            },
+            "AccessGatewayFilterTestGetJwtUser": {
+                "errors": 5,
+                "failures": 0,
+                "testsRun": 5
+            },
+            "AccessGatewayFilterTestIsStartWith": {
+                "errors": 0,
+                "failures": 0,
+                "testsRun": 5
+            }
+        }
+    }
+}

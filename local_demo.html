@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ClassEval · Local Model Demo</title>
+  <style>
+    :root { font-family: Inter, "Segoe UI", Arial, sans-serif; color: #17233b; background: #f4f6fa; }
+    * { box-sizing: border-box; }
+    body { margin: 0; min-height: 100vh; }
+    button, input, select { font: inherit; }
+    button { cursor: pointer; }
+    .shell { max-width: 1440px; margin: auto; padding: 30px; }
+    header { display: flex; justify-content: space-between; gap: 20px; align-items: flex-start; margin-bottom: 23px; }
+    .eyebrow { color: #4763bf; font-size: 12px; font-weight: 750; letter-spacing: .12em; text-transform: uppercase; }
+    h1 { font-size: clamp(25px, 3vw, 35px); letter-spacing: -.04em; margin: 6px 0; }
+    header p { margin: 0; color: #64728b; font-size: 14px; }
+    .badge { display: inline-flex; align-items: center; gap: 8px; padding: 9px 12px; border: 1px solid #dce4f3; border-radius: 99px; background: #fff; color: #40516e; font-size: 12px; white-space: nowrap; }
+    .header-actions { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+    .nav-link { color: #315acb; background: #fff; border: 1px solid #dce4f3; border-radius: 99px; padding: 9px 13px; font-size: 12px; font-weight: 700; text-decoration: none; }
+    .nav-link:hover { background: #eaf0ff; }
+    .dot { width: 8px; height: 8px; border-radius: 50%; background: #13a77b; }
+    .grid { display: grid; grid-template-columns: 340px minmax(0, 1fr); gap: 18px; min-height: 690px; }
+    .card { background: #fff; border: 1px solid #e2e8f2; border-radius: 16px; box-shadow: 0 6px 24px rgba(27,45,88,.045); }
+    .side { display: flex; flex-direction: column; min-height: 0; }
+    .side-head { padding: 22px 22px 14px; border-bottom: 1px solid #edf0f6; }
+    .side h2, .main h2 { font-size: 16px; margin: 0 0 6px; }
+    .muted { color: #718099; font-size: 12px; line-height: 1.45; }
+    .search { width: 100%; margin-top: 15px; padding: 10px 12px; border: 1px solid #dce4ee; border-radius: 9px; background: #f9fbfe; outline-color: #4267d6; }
+    .tasks { overflow: auto; padding: 8px; max-height: 655px; }
+    .task { width: 100%; display: flex; gap: 11px; align-items: center; padding: 11px 12px; border: 0; border-radius: 9px; background: transparent; color: #263651; text-align: left; font-size: 13px; }
+    .task:hover { background: #f4f7fd; }
+    .task.active { background: #eaf0ff; color: #224db3; font-weight: 650; }
+    .task-id { font-size: 11px; color: #7d8da8; min-width: 76px; }
+    .task.active .task-id { color: #5574c8; }
+    .main { display: flex; flex-direction: column; min-width: 0; }
+    .controls { padding: 22px; border-bottom: 1px solid #edf0f6; }
+    .control-head { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; margin-bottom: 17px; }
+    .fields { display: grid; grid-template-columns: 1.2fr 1.7fr .9fr .7fr; gap: 12px; }
+    label { display: block; color: #52627e; font-size: 12px; font-weight: 650; margin-bottom: 7px; }
+    input, select { width: 100%; height: 39px; border: 1px solid #dce4ee; background: #fff; border-radius: 8px; padding: 0 10px; color: #1d2b42; outline-color: #4267d6; }
+    select:disabled { color: #8c99ac; background: #f4f6f9; }
+    .actions { display: flex; align-items: center; gap: 9px; margin-top: 17px; flex-wrap: wrap; }
+    .primary { border: 1px solid #315acb; background: #315acb; color: #fff; font-weight: 650; padding: 10px 16px; border-radius: 9px; }
+    .primary:hover { background: #254ebf; }
+    .primary:disabled { opacity: .55; cursor: default; }
+    .secondary { border: 1px solid #dce4ee; background: #fff; color: #34425e; padding: 10px 14px; border-radius: 9px; }
+    .secondary:hover { background: #f6f8fc; }
+    .secondary:disabled { opacity: .5; cursor: default; }
+    .status { margin-left: auto; font-size: 12px; color: #60718c; max-width: 55%; text-align: right; overflow-wrap: anywhere; }
+    .status.error { color: #b64143; }
+    .viewer { display: flex; flex-direction: column; min-height: 0; flex: 1; }
+    .tabs { display: flex; gap: 2px; padding: 10px 18px 0; border-bottom: 1px solid #e8edf5; }
+    .tab { padding: 10px 12px 12px; border: 0; background: transparent; color: #718099; font-size: 13px; border-bottom: 2px solid transparent; }
+    .tab.active { color: #315acb; border-color: #315acb; font-weight: 650; }
+    .pane { display: none; flex: 1; min-height: 0; }
+    .pane.active { display: flex; flex-direction: column; }
+    pre { margin: 0; padding: 22px 24px; overflow: auto; flex: 1; max-height: 510px; color: #25324c; background: #fff; font: 12px/1.65 Consolas, "SFMono-Regular", monospace; white-space: pre; tab-size: 4; }
+    .empty { color: #98a5b8; }
+    .foot { display: flex; justify-content: space-between; gap: 16px; padding: 12px 20px; border-top: 1px solid #edf0f6; color: #8190a6; font-size: 11px; }
+    .foot span:last-child { text-align: right; overflow-wrap: anywhere; }
+    @media (max-width: 950px) { .grid { grid-template-columns: 1fr; } .tasks { max-height: 220px; } .fields { grid-template-columns: 1fr 1fr; } .status { margin-left: 0; max-width: 100%; text-align: left; } }
+    @media (max-width: 600px) { .shell { padding: 14px; } header { display: block; } .badge { margin-top: 12px; } .fields { grid-template-columns: 1fr; } .tabs { overflow-x: auto; } .tab { white-space: nowrap; } }
+  </style>
+</head>
+<body>
+<div class="shell">
+  <header>
+    <div><div class="eyebrow">Local experiment</div><h1>ClassEval model demo</h1><p>Sinh mã Python cho một bài, xem kết quả và lưu theo định dạng JSON của ClassEval.</p></div>
+    <div class="header-actions"><a class="nav-link" href="/compare">So sánh chỉ số →</a><div class="badge"><span class="dot"></span> Chạy trên máy của bạn · 127.0.0.1</div></div>
+  </header>
+  <div class="grid">
+    <aside class="card side">
+      <div class="side-head"><h2>Bài ClassEval</h2><div class="muted">Chọn một lớp để thử. Đầu vào hiện ở tab Skeleton.</div><input id="search" class="search" placeholder="Tìm theo ID hoặc tên lớp" aria-label="Tìm bài"></div>
+      <div id="tasks" class="tasks"></div>
+    </aside>
+    <main class="card main">
+      <section class="controls">
+        <div class="control-head"><div><h2>Cấu hình lần chạy</h2><div class="muted">Checkpoint có thể là thư mục trên máy hoặc ID Hugging Face.</div></div><div id="selected" class="muted"></div></div>
+        <div class="fields">
+          <div><label for="model">Model</label><select id="model"></select></div>
+          <div><label for="checkpoint">Checkpoint</label><input id="checkpoint" spellcheck="false" placeholder="Ví dụ: bigcode/santacoder"></div>
+          <div><label for="style">Prompt</label><select id="style"><option value="0">Baseline</option><option value="1">Chain of Thought</option><option value="2">Few-shot</option><option value="3">Plan then Code</option></select></div>
+          <div><label for="maxLength">Max length</label><input id="maxLength" type="number" min="64" max="32768" value="2048"></div>
+        </div>
+        <div class="actions">
+          <button id="run" class="primary">Chạy model → JSON</button>
+          <button id="cancel" class="secondary" disabled>Dừng</button>
+          <button id="download" class="secondary" disabled>Tải JSON</button>
+          <button id="openFile" class="secondary">Xem JSON có sẵn</button>
+          <input id="filePicker" type="file" accept=".json,application/json" hidden>
+          <span id="status" class="status">Đang tải dữ liệu…</span>
+        </div>
+      </section>
+      <section class="viewer">
+        <div class="tabs"><button class="tab active" data-tab="skeleton">Skeleton</button><button class="tab" data-tab="code">Mã model sinh</button><button class="tab" data-tab="json">JSON</button><button class="tab" data-tab="log">Log</button></div>
+        <div class="pane active" data-pane="skeleton"><pre id="skeleton"></pre></div>
+        <div class="pane" data-pane="code"><pre id="code" class="empty">Chưa có mã được sinh.</pre></div>
+        <div class="pane" data-pane="json"><pre id="json" class="empty">Kết quả JSON sẽ hiện ở đây.</pre></div>
+        <div class="pane" data-pane="log"><pre id="log" class="empty">Log chạy model sẽ hiện ở đây.</pre></div>
+        <div class="foot"><span>Đầu ra mặc định: output/model_output</span><span id="outputPath">Chưa có file kết quả</span></div>
+      </section>
+    </main>
+  </div>
+</div>
+<script>
+  const $ = id => document.getElementById(id);
+  let tasks = [], models = [], selectedId = null, lastStatus = null;
+
+  function showTab(name) {
+    document.querySelectorAll('.tab').forEach(el => el.classList.toggle('active', el.dataset.tab === name));
+    document.querySelectorAll('.pane').forEach(el => el.classList.toggle('active', el.dataset.pane === name));
+  }
+  document.querySelectorAll('.tab').forEach(el => el.addEventListener('click', () => showTab(el.dataset.tab)));
+
+  function setStatus(message, error=false) {
+    $('status').textContent = message;
+    $('status').classList.toggle('error', error);
+  }
+  function renderTasks() {
+    const query = $('search').value.trim().toLowerCase();
+    const list = $('tasks'); list.replaceChildren();
+    tasks.filter(t => `${t.task_id} ${t.class_name}`.toLowerCase().includes(query)).forEach(t => {
+      const button = document.createElement('button'); button.className = 'task' + (t.task_id === selectedId ? ' active' : '');
+      const id = document.createElement('span'); id.className = 'task-id'; id.textContent = t.task_id;
+      const name = document.createElement('span'); name.textContent = t.class_name;
+      button.append(id, name); button.onclick = () => selectTask(t.task_id); list.append(button);
+    });
+  }
+  function selectTask(id) {
+    selectedId = id; const task = tasks.find(t => t.task_id === id);
+    $('selected').textContent = `${task.task_id} · ${task.class_name}`;
+    $('skeleton').textContent = task.skeleton;
+    renderTasks();
+  }
+  function selectedModel() { return models.find(m => m.id === Number($('model').value)); }
+  function updateModel() {
+    const model = selectedModel(); if (!model) return;
+    $('checkpoint').value = model.checkpoint;
+    if (model.max_length) $('maxLength').value = model.max_length;
+    for (const option of $('style').options) option.disabled = !model.styles.includes(Number(option.value));
+    if (!model.styles.includes(Number($('style').value))) $('style').value = '0';
+    $('style').disabled = model.styles.length === 1;
+  }
+
+  async function api(path, options) {
+    const response = await fetch(path, options);
+    const data = await response.json();
+    if (!response.ok) throw new Error(data.error || `HTTP ${response.status}`);
+    return data;
+  }
+  function displayResult(data) {
+    $('json').textContent = JSON.stringify(data, null, 2);
+    $('json').classList.remove('empty');
+    const prediction = Array.isArray(data) && data[0] && Array.isArray(data[0].predict) ? data[0].predict[0] : null;
+    $('code').textContent = prediction || 'Không có mã dự đoán trong JSON.';
+    $('code').classList.toggle('empty', !prediction);
+  }
+  async function poll() {
+    try {
+      const state = await api('/api/status');
+      $('log').textContent = state.logs || 'Log chạy model sẽ hiện ở đây.';
+      $('log').classList.toggle('empty', !state.logs);
+      $('outputPath').textContent = state.output_path || 'Chưa có file kết quả';
+      const busy = state.status === 'running' || state.status === 'stopping';
+      $('run').disabled = busy; $('cancel').disabled = !busy;
+      if (state.status === 'running') setStatus('Đang chạy model…');
+      if (state.status === 'stopping') setStatus('Đang dừng model…');
+      if (state.status === 'failed') setStatus(state.error || 'Lần chạy thất bại. Xem tab Log.', true);
+      if (state.status === 'done') setStatus('Đã lưu JSON: ' + state.output_path);
+      if (state.status === 'done' && lastStatus !== 'done') {
+        displayResult(await api('/api/result')); $('download').disabled = false; showTab('code');
+      }
+      if (state.status === 'failed' && lastStatus !== 'failed') showTab('log');
+      lastStatus = state.status;
+    } catch (error) { setStatus(error.message, true); }
+  }
+
+  $('search').addEventListener('input', renderTasks);
+  $('model').addEventListener('change', updateModel);
+  $('run').addEventListener('click', async () => {
+    const model = selectedModel();
+    const payload = {model_id: model.id, checkpoint: $('checkpoint').value.trim(), task_id: selectedId,
+                     style: Number($('style').value), max_length: Number($('maxLength').value)};
+    try {
+      await api('/api/run', {method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify(payload)});
+      $('download').disabled = true; $('code').textContent = 'Chưa có mã được sinh.'; $('json').textContent = 'Đang tạo JSON…';
+      lastStatus = 'running'; showTab('log'); await poll();
+    } catch (error) { setStatus(error.message, true); }
+  });
+  $('cancel').addEventListener('click', async () => { try { await api('/api/cancel', {method:'POST'}); await poll(); } catch (error) { setStatus(error.message, true); } });
+  $('download').addEventListener('click', () => { window.location.href = '/api/download'; });
+  $('openFile').addEventListener('click', () => $('filePicker').click());
+  $('filePicker').addEventListener('change', async event => {
+    const file = event.target.files[0]; if (!file) return;
+    try { displayResult(JSON.parse(await file.text())); showTab('json'); setStatus('Đang xem: ' + file.name); }
+    catch (error) { setStatus('Không đọc được JSON: ' + error.message, true); }
+    event.target.value = '';
+  });
+
+  (async () => {
+    try {
+      [tasks, models] = await Promise.all([api('/api/tasks'), api('/api/models')]);
+      for (const model of models) { const option = document.createElement('option'); option.value = model.id; option.textContent = model.name; $('model').append(option); }
+      updateModel(); selectTask(tasks[0].task_id); setStatus('Sẵn sàng · chọn model và bấm Chạy model → JSON');
+      await poll(); setInterval(poll, 1000);
+    } catch (error) { setStatus(error.message, true); }
+  })();
+</script>
+</body>
+</html>

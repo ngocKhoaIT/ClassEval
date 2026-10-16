@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ClassEval · So sánh chỉ số</title>
+  <style>
+    :root { font-family: Inter, "Segoe UI", Arial, sans-serif; color: #17233b; background: #f4f6fa; }
+    * { box-sizing: border-box; }
+    body { margin: 0; }
+    button, input, select { font: inherit; }
+    .shell { max-width: 1420px; margin: auto; padding: 30px; }
+    header { display: flex; justify-content: space-between; align-items: flex-start; gap: 20px; margin-bottom: 22px; }
+    .eyebrow { color: #4763bf; font-size: 12px; font-weight: 750; letter-spacing: .12em; text-transform: uppercase; }
+    h1 { font-size: clamp(25px, 3vw, 35px); letter-spacing: -.04em; margin: 6px 0; }
+    header p { margin: 0; color: #64728b; font-size: 14px; }
+    a.back { display: inline-block; white-space: nowrap; color: #315acb; background: #fff; border: 1px solid #dce4f3; border-radius: 99px; padding: 10px 15px; font-size: 13px; font-weight: 700; text-decoration: none; }
+    a.back:hover { background: #eaf0ff; }
+    .card { background: #fff; border: 1px solid #e2e8f2; border-radius: 16px; box-shadow: 0 6px 24px rgba(27,45,88,.045); }
+    .filters { padding: 21px; display: grid; grid-template-columns: repeat(5,minmax(0,1fr)); gap: 14px; }
+    label { display: block; color: #52627e; font-size: 12px; font-weight: 650; margin-bottom: 7px; }
+    select, input { width: 100%; height: 40px; border: 1px solid #dce4ee; background: #fff; border-radius: 8px; padding: 0 10px; color: #1d2b42; outline-color: #4267d6; }
+    .filter-note { grid-column: 1 / -1; color: #6d7d96; font-size: 12px; line-height: 1.5; }
+    .summary { display: grid; grid-template-columns: repeat(3,1fr); gap: 14px; margin: 16px 0; }
+    .summary .card { padding: 18px 21px; }
+    .summary .name { color: #718099; font-size: 12px; margin-bottom: 7px; }
+    .summary .value { color: #1b2a47; font-size: 26px; font-weight: 750; letter-spacing: -.035em; }
+    .summary .detail { color: #7e8ca3; font-size: 11px; margin-top: 4px; overflow-wrap: anywhere; }
+    .panel { padding: 22px; margin-bottom: 16px; }
+    .panel-head { display: flex; justify-content: space-between; align-items: flex-start; gap: 20px; margin-bottom: 12px; }
+    h2 { margin: 0; font-size: 17px; }
+    .sub { color: #718099; font-size: 12px; line-height: 1.5; margin-top: 5px; }
+    .legend { display: flex; gap: 17px; flex-wrap: wrap; color: #65748f; font-size: 12px; }
+    .swatch { display: inline-block; width: 10px; height: 10px; border-radius: 3px; margin-right: 6px; }
+    .blue { background: #4267d6; } .teal { background: #22a6a0; }
+    .axis { display: grid; grid-template-columns: 235px 1fr; gap: 16px; align-items: end; margin: 16px 0 7px; color: #8997ad; font-size: 11px; }
+    .ticks { display: flex; justify-content: space-between; border-bottom: 1px solid #dce4ef; padding-bottom: 7px; }
+    #chart { max-height: 850px; overflow: auto; }
+    .chart-row { display: grid; grid-template-columns: 235px 1fr; gap: 16px; padding: 10px 0; border-bottom: 1px solid #f0f3f8; }
+    .chart-row:last-child { border-bottom: 0; }
+    .row-label { align-self: center; min-width: 0; }
+    .row-label strong { display: block; font-size: 13px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .row-label span { display: block; color: #8a98ad; font-size: 11px; margin-top: 3px; }
+    .bars { display: grid; gap: 6px; align-content: center; }
+    .bar-line { display: flex; align-items: center; gap: 9px; }
+    .track { height: 14px; flex: 1; background: repeating-linear-gradient(to right,#f3f6fb 0,#f3f6fb calc(25% - 1px),#dce4f0 calc(25% - 1px),#dce4f0 25%); border-radius: 4px; overflow: hidden; }
+    .fill { height: 100%; min-width: 0; border-radius: 4px; }
+    .pct { width: 45px; text-align: right; color: #485974; font: 12px Consolas,monospace; }
+    .table-wrap { overflow: auto; }
+    table { width: 100%; border-collapse: collapse; font-size: 13px; }
+    th { color: #697a94; font-size: 11px; text-transform: uppercase; letter-spacing: .055em; text-align: left; padding: 11px 10px; border-bottom: 1px solid #dce4ef; white-space: nowrap; }
+    td { padding: 11px 10px; border-bottom: 1px solid #eef1f6; }
+    tr:last-child td { border-bottom: 0; }
+    td.num { font: 12px Consolas,monospace; }
+    .strategy { display: inline-block; background: #edf2ff; color: #3a5fc0; border-radius: 5px; padding: 3px 6px; font-size: 11px; font-weight: 700; }
+    .empty { padding: 30px; text-align: center; color: #8a98ad; }
+    .source { color: #7e8ca3; font-size: 12px; margin: 8px 0 25px; overflow-wrap: anywhere; }
+    @media(max-width:1000px) { .filters { grid-template-columns: repeat(2,minmax(0,1fr)); } .axis,.chart-row { grid-template-columns: 165px 1fr; } }
+    @media(max-width:650px) { .shell { padding: 14px; } header { display: block; } .back { margin-top: 12px; } .filters,.summary { grid-template-columns: 1fr; } .axis,.chart-row { grid-template-columns: 1fr; gap: 6px; } .axis>span { display: none; } .chart-row { padding: 13px 0; } .panel-head { display: block; } .legend { margin-top: 10px; } }
+  </style>
+</head>
+<body>
+<div class="shell">
+  <header>
+    <div><div class="eyebrow">ClassEval results</div><h1>So sánh chỉ số model</h1><p>Đối chiếu tỉ lệ đạt ở mức lớp và phương thức theo cách trình bày của bài báo.</p></div>
+    <a class="back" href="/">← Quay lại chạy model</a>
+  </header>
+
+  <section class="card filters" aria-label="Bộ lọc chỉ số">
+    <div><label for="sampling">Chỉ số</label><select id="sampling"><option value="pass_1_greedy">Pass@1 · greedy</option><option value="pass_1">Pass@1 · sampling</option><option value="pass_3">Pass@3 · sampling</option><option value="pass_5">Pass@5 · sampling</option></select></div>
+    <div><label for="quality">Cách tính đạt</label><select id="quality"><option value="strict">Đạt tất cả kiểm thử</option><option value="partial">Có kiểm thử đạt một phần</option></select></div>
+    <div><label for="scope">Model</label><select id="scope"><option value="benchmark">Các model benchmark</option><option value="local">Chỉ model local</option><option value="all">Gồm các lần chạy thêm</option></select></div>
+    <div><label for="mode">Cách hiển thị</label><select id="mode"><option value="best">Chiến lược tốt nhất / model</option><option value="all">Tất cả chiến lược</option></select></div>
+    <div><label for="strategy">Chiến lược</label><select id="strategy"><option value="all">Tất cả</option><option value="H">H · viết cả lớp</option><option value="I">I · lần lượt</option><option value="C">C · ghép phương thức</option><option value="CoT">Gemini · CoT</option><option value="Few-shot">Gemini · few-shot</option><option value="Plan">Gemini · plan</option><option value="other">Các lần chạy khác</option></select></div>
+    <div><label for="search">Tìm model</label><input id="search" placeholder="Tên model hoặc chiến lược"></div>
+    <div><label for="sort">Sắp xếp</label><select id="sort"><option value="class">Lớp: cao đến thấp</option><option value="method">Phương thức: cao đến thấp</option><option value="name">Tên model</option></select></div>
+    <div class="filter-note">Dữ liệu được đọc từ một nguồn duy nhất: <code>output/result/pass_at_k_result.json</code>. Gemini từ ClassEval2 có chỉ số Pass@1 · greedy; file này không có chỉ số Gemini Pass@3/Pass@5. H = holistic, I = incremental, C = compositional.</div>
+  </section>
+
+  <div class="summary">
+    <div class="card"><div class="name">Dòng đang hiển thị</div><div id="rowCount" class="value">—</div><div class="detail">Sau khi lọc và chọn chiến lược</div></div>
+    <div class="card"><div class="name">Cao nhất · mức lớp</div><div id="bestClass" class="value">—</div><div id="bestClassName" class="detail">—</div></div>
+    <div class="card"><div class="name">Cao nhất · mức phương thức</div><div id="bestMethod" class="value">—</div><div id="bestMethodName" class="detail">—</div></div>
+  </div>
+
+  <section class="card panel">
+    <div class="panel-head"><div><h2>Đồ thị so sánh</h2><div class="sub">Hai thanh trên mỗi dòng dùng cùng trục 0–100%.</div></div><div class="legend"><span><i class="swatch blue"></i>Mức lớp</span><span><i class="swatch teal"></i>Mức phương thức</span></div></div>
+    <div class="axis"><span></span><div class="ticks"><span>0%</span><span>25%</span><span>50%</span><span>75%</span><span>100%</span></div></div>
+    <div id="chart"></div>
+  </section>
+
+  <section class="card panel">
+    <div class="panel-head"><div><h2>Bảng số liệu</h2><div class="sub">Các giá trị hiển thị dưới dạng phần trăm, làm tròn một chữ số thập phân.</div></div></div>
+    <div class="table-wrap"><table><thead><tr><th>Model</th><th>Chiến lược</th><th>Mức lớp</th><th>Mức phương thức</th><th>Chênh lệch</th></tr></thead><tbody id="table"></tbody></table></div>
+  </section>
+  <div id="sourcePath" class="source"></div>
+</div>
+<script>
+  const $ = id => document.getElementById(id);
+  const controls = ['sampling','quality','scope','mode','strategy','sort','search'];
+  let metrics = null;
+  const percent = value => `${(100 * value).toFixed(1)}%`;
+
+  function parseName(raw) {
+    const gemini = raw.match(/^gemini_(cot|fewshot|plan)_greedy$/i);
+    if (gemini) {
+      const strategy = {cot: 'CoT', fewshot: 'Few-shot', plan: 'Plan'}[gemini[1].toLowerCase()];
+      return {model: `Gemini · ${strategy}`, strategy};
+    }
+    let match = raw.match(/^(.+)_(?:class|method)_([HIC])_(?:greedy|t0\.2)$/i);
+    if (!match) match = raw.match(/^(.+)_([HIC])(?:\(greedy\))?$/);
+    if (match) return {model: match[1], strategy: match[2].toUpperCase()};
+    return {model: raw, strategy: 'Khác'};
+  }
+  function localModel(name) { return !/^(gpt|gemini)/i.test(name); }
+  function rowsForSelection() {
+    if (!metrics) return [];
+    const group = metrics.groups[$('sampling').value] || {};
+    const partial = $('quality').value === 'partial';
+    let rows = Object.entries(group).map(([raw, values]) => {
+      const parsed = parseName(raw);
+      return {raw, ...parsed,
+              classScore: Number(values[partial ? 'class_partial_success' : 'class_success']),
+              methodScore: Number(values[partial ? 'fun_partial_success' : 'fun_success'])};
+    }).filter(row => Number.isFinite(row.classScore) && Number.isFinite(row.methodScore));
+    if ($('scope').value === 'benchmark') rows = rows.filter(row => row.strategy !== 'Khác');
+    if ($('scope').value === 'local') rows = rows.filter(row => row.strategy !== 'Khác' && localModel(row.model));
+    const strategy = $('strategy').value;
+    if (strategy !== 'all') rows = rows.filter(row => strategy === 'other' ? row.strategy === 'Khác' : row.strategy === strategy);
+    const query = $('search').value.trim().toLowerCase();
+    if (query) rows = rows.filter(row => `${row.model} ${row.strategy}`.toLowerCase().includes(query));
+    if ($('mode').value === 'best') {
+      const best = new Map();
+      for (const row of rows) {
+        const current = best.get(row.model);
+        if (!current || row.classScore > current.classScore ||
+            (row.classScore === current.classScore && row.methodScore > current.methodScore)) best.set(row.model, row);
+      }
+      rows = [...best.values()];
+    }
+    const sort = $('sort').value;
+    rows.sort((a,b) => sort === 'name' ? a.model.localeCompare(b.model) :
+      sort === 'method' ? b.methodScore-a.methodScore || b.classScore-a.classScore :
+      b.classScore-a.classScore || b.methodScore-a.methodScore);
+    return rows;
+  }
+  function node(tag, className, text) {
+    const el = document.createElement(tag);
+    if (className) el.className = className;
+    if (text !== undefined) el.textContent = text;
+    return el;
+  }
+  function barLine(value, color) {
+    const line = node('div','bar-line'); const track = node('div','track'); const fill = node('div',`fill ${color}`);
+    fill.style.width = `${Math.max(0,Math.min(100,value*100))}%`;
+    track.append(fill); line.append(track,node('span','pct',percent(value))); return line;
+  }
+  function render() {
+    const rows = rowsForSelection();
+    $('rowCount').textContent = String(rows.length);
+    const bestClass = [...rows].sort((a,b) => b.classScore-a.classScore)[0];
+    const bestMethod = [...rows].sort((a,b) => b.methodScore-a.methodScore)[0];
+    $('bestClass').textContent = bestClass ? percent(bestClass.classScore) : '—';
+    $('bestClassName').textContent = bestClass ? `${bestClass.model} · ${bestClass.strategy}` : 'Không có dữ liệu';
+    $('bestMethod').textContent = bestMethod ? percent(bestMethod.methodScore) : '—';
+    $('bestMethodName').textContent = bestMethod ? `${bestMethod.model} · ${bestMethod.strategy}` : 'Không có dữ liệu';
+    $('chart').replaceChildren(); $('table').replaceChildren();
+    if (!rows.length) { $('chart').append(node('div','empty','Không có kết quả phù hợp với bộ lọc.')); return; }
+    for (const row of rows) {
+      const chartRow = node('div','chart-row');
+      const label = node('div','row-label'); label.append(node('strong','',row.model),node('span','',`Chiến lược ${row.strategy}`));
+      const bars = node('div','bars'); bars.append(barLine(row.classScore,'blue'),barLine(row.methodScore,'teal'));
+      chartRow.append(label,bars); $('chart').append(chartRow);
+
+      const tr = node('tr');
+      const name = node('td','',row.model); name.title = row.raw;
+      const strategy = node('td'); strategy.append(node('span','strategy',row.strategy));
+      tr.append(name,strategy,node('td','num',percent(row.classScore)),
+                node('td','num',percent(row.methodScore)),
+                node('td','num',`${((row.methodScore-row.classScore)*100).toFixed(1)} điểm`));
+      $('table').append(tr);
+    }
+  }
+  async function loadSource() {
+    try {
+      $('sourcePath').textContent = 'Đang tải chỉ số…';
+      const response = await fetch('/api/metrics');
+      const data = await response.json();
+      if (!response.ok) throw new Error(data.error || `HTTP ${response.status}`);
+      metrics = data;
+      $('sourcePath').textContent = `Nguồn duy nhất: ${data.file}. Gemini CoT và plan có 100 tác vụ; few-shot có 98. Chỉ số Gemini được báo cáo là Pass@1 · greedy.`;
+      render();
+    } catch (error) { metrics = null; $('sourcePath').textContent = `Không tải được chỉ số: ${error.message}`; render(); }
+  }
+  controls.forEach(id => $(id).addEventListener(id === 'search' ? 'input' : 'change', render));
+  loadSource();
+</script>
+</body>
+</html>

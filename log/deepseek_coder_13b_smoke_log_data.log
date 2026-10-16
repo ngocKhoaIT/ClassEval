@@ -1,0 +1,134 @@
+FFFFF.FF
+======================================================================
+FAIL: test_filter_1 (ClassEval_0_0.AccessGatewayFilterTestFilter)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\K-Project\APython\ClassEval\classeval_evaluation\ClassEval_0_0.py", line 72, in test_filter_1
+    self.assertTrue(res)
+AssertionError: False is not true
+
+======================================================================
+FAIL: test_filter_2 (ClassEval_0_0.AccessGatewayFilterTestFilter)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\K-Project\APython\ClassEval\classeval_evaluation\ClassEval_0_0.py", line 78, in test_filter_2
+    self.assertTrue(res)
+AssertionError: False is not true
+
+======================================================================
+FAIL: test_filter_3 (ClassEval_0_0.AccessGatewayFilterTestFilter)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\K-Project\APython\ClassEval\classeval_evaluation\ClassEval_0_0.py", line 84, in test_filter_3
+    self.assertTrue(res)
+AssertionError: False is not true
+
+======================================================================
+FAIL: test_filter_4 (ClassEval_0_0.AccessGatewayFilterTestFilter)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\K-Project\APython\ClassEval\classeval_evaluation\ClassEval_0_0.py", line 90, in test_filter_4
+    self.assertTrue(res)
+AssertionError: False is not true
+
+======================================================================
+FAIL: test_filter_5 (ClassEval_0_0.AccessGatewayFilterTestFilter)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\K-Project\APython\ClassEval\classeval_evaluation\ClassEval_0_0.py", line 99, in test_filter_5
+    self.assertTrue(res)
+AssertionError: False is not true
+
+======================================================================
+FAIL: test_filter_7 (ClassEval_0_0.AccessGatewayFilterTestFilter)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\K-Project\APython\ClassEval\classeval_evaluation\ClassEval_0_0.py", line 117, in test_filter_7
+    self.assertIsNone(res)
+AssertionError: False is not None
+
+======================================================================
+FAIL: test_filter_8 (ClassEval_0_0.AccessGatewayFilterTestFilter)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\K-Project\APython\ClassEval\classeval_evaluation\ClassEval_0_0.py", line 126, in test_filter_8
+    self.assertTrue(res)
+AssertionError: False is not true
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.001s
+
+FAILED (failures=7)
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.000s
+
+OK
+EEEEE
+======================================================================
+ERROR: test_get_jwt_user_1 (ClassEval_0_0.AccessGatewayFilterTestGetJwtUser)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\K-Project\APython\ClassEval\classeval_evaluation\ClassEval_0_0.py", line 166, in test_get_jwt_user_1
+    res = agf.get_jwt_user(request)
+  File "E:\K-Project\APython\ClassEval\classeval_evaluation\ClassEval_0_0.py", line 45, in get_jwt_user
+    user = jwt.split('.')[1]
+IndexError: list index out of range
+
+======================================================================
+ERROR: test_get_jwt_user_2 (ClassEval_0_0.AccessGatewayFilterTestGetJwtUser)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\K-Project\APython\ClassEval\classeval_evaluation\ClassEval_0_0.py", line 173, in test_get_jwt_user_2
+    res = agf.get_jwt_user(request)
+  File "E:\K-Project\APython\ClassEval\classeval_evaluation\ClassEval_0_0.py", line 45, in get_jwt_user
+    user = jwt.split('.')[1]
+IndexError: list index out of range
+
+======================================================================
+ERROR: test_get_jwt_user_3 (ClassEval_0_0.AccessGatewayFilterTestGetJwtUser)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\K-Project\APython\ClassEval\classeval_evaluation\ClassEval_0_0.py", line 180, in test_get_jwt_user_3
+    res = agf.get_jwt_user(request)
+  File "E:\K-Project\APython\ClassEval\classeval_evaluation\ClassEval_0_0.py", line 45, in get_jwt_user
+    user = jwt.split('.')[1]
+IndexError: list index out of range
+
+======================================================================
+ERROR: test_get_jwt_user_4 (ClassEval_0_0.AccessGatewayFilterTestGetJwtUser)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\K-Project\APython\ClassEval\classeval_evaluation\ClassEval_0_0.py", line 187, in test_get_jwt_user_4
+    res = agf.get_jwt_user(request)
+  File "E:\K-Project\APython\ClassEval\classeval_evaluation\ClassEval_0_0.py", line 45, in get_jwt_user
+    user = jwt.split('.')[1]
+IndexError: list index out of range
+
+======================================================================
+ERROR: test_get_jwt_user_5 (ClassEval_0_0.AccessGatewayFilterTestGetJwtUser)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\K-Project\APython\ClassEval\classeval_evaluation\ClassEval_0_0.py", line 194, in test_get_jwt_user_5
+    res = agf.get_jwt_user(request)
+  File "E:\K-Project\APython\ClassEval\classeval_evaluation\ClassEval_0_0.py", line 45, in get_jwt_user
+    user = jwt.split('.')[1]
+IndexError: list index out of range
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+FAILED (errors=5)
+F
+======================================================================
+FAIL: test_AccessGatewayFilter (ClassEval_0_0.AccessGatewayFilterTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\K-Project\APython\ClassEval\classeval_evaluation\ClassEval_0_0.py", line 203, in test_AccessGatewayFilter
+    self.assertTrue(res)
+AssertionError: False is not true
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+FAILED (failures=1)

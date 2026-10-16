@@ -1,0 +1,296 @@
+FFFFF
+======================================================================
+FAIL: test_add (ClassEval_24_0.ComplexCalculatorTestAdd)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\K-Project\APython\ClassEval\classeval_evaluation\ClassEval_24_0.py", line 67, in test_add
+    self.assertEqual(complexCalculator.add(1+2j, 3+4j), (4+6j))
+AssertionError: None != (4+6j)
+
+======================================================================
+FAIL: test_add_2 (ClassEval_24_0.ComplexCalculatorTestAdd)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\K-Project\APython\ClassEval\classeval_evaluation\ClassEval_24_0.py", line 71, in test_add_2
+    self.assertEqual(complexCalculator.add(-1 - 2j, -3 - 4j), (-4 - 6j))
+AssertionError: None != (-4-6j)
+
+======================================================================
+FAIL: test_add_3 (ClassEval_24_0.ComplexCalculatorTestAdd)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\K-Project\APython\ClassEval\classeval_evaluation\ClassEval_24_0.py", line 75, in test_add_3
+    self.assertEqual(complexCalculator.add(1-2j, 3-4j), (4-6j))
+AssertionError: None != (4-6j)
+
+======================================================================
+FAIL: test_add_4 (ClassEval_24_0.ComplexCalculatorTestAdd)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\K-Project\APython\ClassEval\classeval_evaluation\ClassEval_24_0.py", line 79, in test_add_4
+    self.assertEqual(complexCalculator.add(-1+2j, -3+4j), (-4+6j))
+AssertionError: None != (-4+6j)
+
+======================================================================
+FAIL: test_add_5 (ClassEval_24_0.ComplexCalculatorTestAdd)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\K-Project\APython\ClassEval\classeval_evaluation\ClassEval_24_0.py", line 83, in test_add_5
+    self.assertEqual(complexCalculator.add(1+2j, -1-2j), (0+0j))
+AssertionError: None != 0j
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.002s
+
+FAILED (failures=5)
+FFFFF
+======================================================================
+FAIL: test_subtract (ClassEval_24_0.ComplexCalculatorTestSubtract)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\K-Project\APython\ClassEval\classeval_evaluation\ClassEval_24_0.py", line 88, in test_subtract
+    self.assertEqual(complexCalculator.subtract(1+2j, 3+4j), (-2-2j))
+AssertionError: None != (-2-2j)
+
+======================================================================
+FAIL: test_subtract_2 (ClassEval_24_0.ComplexCalculatorTestSubtract)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\K-Project\APython\ClassEval\classeval_evaluation\ClassEval_24_0.py", line 92, in test_subtract_2
+    self.assertEqual(complexCalculator.subtract(-1-2j, -3-4j), (2+2j))
+AssertionError: None != (2+2j)
+
+======================================================================
+FAIL: test_subtract_3 (ClassEval_24_0.ComplexCalculatorTestSubtract)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\K-Project\APython\ClassEval\classeval_evaluation\ClassEval_24_0.py", line 96, in test_subtract_3
+    self.assertEqual(complexCalculator.subtract(1-2j, 3-4j), (-2+2j))
+AssertionError: None != (-2+2j)
+
+======================================================================
+FAIL: test_subtract_4 (ClassEval_24_0.ComplexCalculatorTestSubtract)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\K-Project\APython\ClassEval\classeval_evaluation\ClassEval_24_0.py", line 100, in test_subtract_4
+    self.assertEqual(complexCalculator.subtract(-1+2j, -3+4j), (2-2j))
+AssertionError: None != (2-2j)
+
+======================================================================
+FAIL: test_subtract_5 (ClassEval_24_0.ComplexCalculatorTestSubtract)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\K-Project\APython\ClassEval\classeval_evaluation\ClassEval_24_0.py", line 104, in test_subtract_5
+    self.assertEqual(complexCalculator.subtract(1+2j, 1+2j), (0+0j))
+AssertionError: None != 0j
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.002s
+
+FAILED (failures=5)
+FFFFF
+======================================================================
+FAIL: test_multiply (ClassEval_24_0.ComplexCalculatorTestMultiply)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\K-Project\APython\ClassEval\classeval_evaluation\ClassEval_24_0.py", line 109, in test_multiply
+    self.assertEqual(complexCalculator.multiply(1+2j, 3+4j), (-5+10j))
+AssertionError: None != (-5+10j)
+
+======================================================================
+FAIL: test_multiply_2 (ClassEval_24_0.ComplexCalculatorTestMultiply)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\K-Project\APython\ClassEval\classeval_evaluation\ClassEval_24_0.py", line 113, in test_multiply_2
+    self.assertEqual(complexCalculator.multiply(-1-2j, -3-4j), (-5+10j))
+AssertionError: None != (-5+10j)
+
+======================================================================
+FAIL: test_multiply_3 (ClassEval_24_0.ComplexCalculatorTestMultiply)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\K-Project\APython\ClassEval\classeval_evaluation\ClassEval_24_0.py", line 117, in test_multiply_3
+    self.assertEqual(complexCalculator.multiply(1-2j, 3-4j), (-5-10j))
+AssertionError: None != (-5-10j)
+
+======================================================================
+FAIL: test_multiply_4 (ClassEval_24_0.ComplexCalculatorTestMultiply)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\K-Project\APython\ClassEval\classeval_evaluation\ClassEval_24_0.py", line 121, in test_multiply_4
+    self.assertEqual(complexCalculator.multiply(-1+2j, -3+4j), (-5-10j))
+AssertionError: None != (-5-10j)
+
+======================================================================
+FAIL: test_multiply_5 (ClassEval_24_0.ComplexCalculatorTestMultiply)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\K-Project\APython\ClassEval\classeval_evaluation\ClassEval_24_0.py", line 125, in test_multiply_5
+    self.assertEqual(complexCalculator.multiply(1+2j, -1-2j), (3-4j))
+AssertionError: None != (3-4j)
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+FAILED (failures=5)
+FFFFF
+======================================================================
+FAIL: test_divide (ClassEval_24_0.ComplexCalculatorTestDivide)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\K-Project\APython\ClassEval\classeval_evaluation\ClassEval_24_0.py", line 130, in test_divide
+    self.assertEqual(complexCalculator.divide(1+2j, 3+4j), (0.44+0.08j))
+AssertionError: None != (0.44+0.08j)
+
+======================================================================
+FAIL: test_divide_2 (ClassEval_24_0.ComplexCalculatorTestDivide)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\K-Project\APython\ClassEval\classeval_evaluation\ClassEval_24_0.py", line 134, in test_divide_2
+    self.assertEqual(complexCalculator.divide(-1-2j, -3-4j), (0.44+0.08j))
+AssertionError: None != (0.44+0.08j)
+
+======================================================================
+FAIL: test_divide_3 (ClassEval_24_0.ComplexCalculatorTestDivide)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\K-Project\APython\ClassEval\classeval_evaluation\ClassEval_24_0.py", line 138, in test_divide_3
+    self.assertEqual(complexCalculator.divide(1-2j, 3-4j), (0.44-0.08j))
+AssertionError: None != (0.44-0.08j)
+
+======================================================================
+FAIL: test_divide_4 (ClassEval_24_0.ComplexCalculatorTestDivide)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\K-Project\APython\ClassEval\classeval_evaluation\ClassEval_24_0.py", line 142, in test_divide_4
+    self.assertEqual(complexCalculator.divide(-1+2j, -3+4j), (0.44-0.08j))
+AssertionError: None != (0.44-0.08j)
+
+======================================================================
+FAIL: test_divide_5 (ClassEval_24_0.ComplexCalculatorTestDivide)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\K-Project\APython\ClassEval\classeval_evaluation\ClassEval_24_0.py", line 146, in test_divide_5
+    self.assertEqual(complexCalculator.divide(1+2j, -1-2j), (-1+0j))
+AssertionError: None != (-1+0j)
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+FAILED (failures=5)
+F
+======================================================================
+FAIL: test_main (ClassEval_24_0.ComplexCalculatorTestMain)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\K-Project\APython\ClassEval\classeval_evaluation\ClassEval_24_0.py", line 151, in test_main
+    self.assertEqual(complexCalculator.add(1+2j, 3+4j), (4+6j))
+AssertionError: None != (4+6j)
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+FAILED (failures=1)
+F
+======================================================================
+FAIL: test_construct_stop_word_list (ClassEval_62_0.NLPDataProcessorTestConstruct)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\K-Project\APython\ClassEval\classeval_evaluation\ClassEval_62_0.py", line 45, in test_construct_stop_word_list
+    self.assertEqual(stop_word_list, expected_stop_words)
+AssertionError: None != ['a', 'an', 'the']
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+FAILED (failures=1)
+FFFFF
+======================================================================
+FAIL: test_remove_stop_words (ClassEval_62_0.NLPDataProcessorTestRemove)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\K-Project\APython\ClassEval\classeval_evaluation\ClassEval_62_0.py", line 56, in test_remove_stop_words
+    self.assertEqual(words_list, expected_words_list)
+AssertionError: None != [['This', 'is', 'test'], ['This', 'is', 'apple'], ['This', 'is', 'dog']]
+
+======================================================================
+FAIL: test_remove_stop_words_2 (ClassEval_62_0.NLPDataProcessorTestRemove)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\K-Project\APython\ClassEval\classeval_evaluation\ClassEval_62_0.py", line 62, in test_remove_stop_words_2
+    self.assertEqual(words_list, [[], [], []])
+AssertionError: None != [[], [], []]
+
+======================================================================
+FAIL: test_remove_stop_words_3 (ClassEval_62_0.NLPDataProcessorTestRemove)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\K-Project\APython\ClassEval\classeval_evaluation\ClassEval_62_0.py", line 68, in test_remove_stop_words_3
+    self.assertEqual(words_list, [])
+AssertionError: None != []
+
+======================================================================
+FAIL: test_remove_stop_words_4 (ClassEval_62_0.NLPDataProcessorTestRemove)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\K-Project\APython\ClassEval\classeval_evaluation\ClassEval_62_0.py", line 75, in test_remove_stop_words_4
+    self.assertEqual(words_list, expected_words_list)
+AssertionError: None != [['This', 'is', 'a', 'test'], ['This', 'i[44 chars]og']]
+
+======================================================================
+FAIL: test_remove_stop_words_5 (ClassEval_62_0.NLPDataProcessorTestRemove)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\K-Project\APython\ClassEval\classeval_evaluation\ClassEval_62_0.py", line 82, in test_remove_stop_words_5
+    self.assertEqual(words_list, expected_words_list)
+AssertionError: None != [['is', 'test'], ['is', 'apple'], ['is', 'dog']]
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+FAILED (failures=5)
+FFFFF
+======================================================================
+FAIL: test_process (ClassEval_62_0.NLPDataProcessorTestProcess)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\K-Project\APython\ClassEval\classeval_evaluation\ClassEval_62_0.py", line 92, in test_process
+    self.assertEqual(words_list, expected_words_list)
+AssertionError: None != [['This', 'is', 'test.'], ['This', 'is', 'apple.'], ['This', 'is', 'dog.']]
+
+======================================================================
+FAIL: test_process_with_empty_string_list (ClassEval_62_0.NLPDataProcessorTestProcess)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\K-Project\APython\ClassEval\classeval_evaluation\ClassEval_62_0.py", line 97, in test_process_with_empty_string_list
+    self.assertEqual(words_list, [])
+AssertionError: None != []
+
+======================================================================
+FAIL: test_process_with_single_word_sentences (ClassEval_62_0.NLPDataProcessorTestProcess)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\K-Project\APython\ClassEval\classeval_evaluation\ClassEval_62_0.py", line 103, in test_process_with_single_word_sentences
+    self.assertEqual(words_list, expected_words_list)
+AssertionError: None != [['Hello', 'aa'], ['World']]
+
+======================================================================
+FAIL: test_process_with_stop_words_only (ClassEval_62_0.NLPDataProcessorTestProcess)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\K-Project\APython\ClassEval\classeval_evaluation\ClassEval_62_0.py", line 108, in test_process_with_stop_words_only
+    self.assertEqual(words_list, [[], [], []])
+AssertionError: None != [[], [], []]
+
+======================================================================
+FAIL: test_process_with_stop_words_only_2 (ClassEval_62_0.NLPDataProcessorTestProcess)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\K-Project\APython\ClassEval\classeval_evaluation\ClassEval_62_0.py", line 113, in test_process_with_stop_words_only_2
+    self.assertEqual(words_list,[[], [], [], ['This']])
+AssertionError: None != [[], [], [], ['This']]
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+FAILED (failures=5)

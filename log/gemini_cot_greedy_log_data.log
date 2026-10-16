@@ -1,0 +1,4432 @@
+FF..F.FF
+======================================================================
+FAIL: test_filter_1 (ClassEval_0_0.AccessGatewayFilterTestFilter)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_0_0.py", line 104, in test_filter_1
+    self.assertTrue(res)
+AssertionError: False is not true
+
+======================================================================
+FAIL: test_filter_2 (ClassEval_0_0.AccessGatewayFilterTestFilter)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_0_0.py", line 110, in test_filter_2
+    self.assertTrue(res)
+AssertionError: False is not true
+
+======================================================================
+FAIL: test_filter_5 (ClassEval_0_0.AccessGatewayFilterTestFilter)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_0_0.py", line 131, in test_filter_5
+    self.assertTrue(res)
+AssertionError: False is not true
+
+======================================================================
+FAIL: test_filter_7 (ClassEval_0_0.AccessGatewayFilterTestFilter)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_0_0.py", line 149, in test_filter_7
+    self.assertIsNone(res)
+AssertionError: False is not None
+
+======================================================================
+FAIL: test_filter_8 (ClassEval_0_0.AccessGatewayFilterTestFilter)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_0_0.py", line 158, in test_filter_8
+    self.assertTrue(res)
+AssertionError: False is not true
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.003s
+
+FAILED (failures=5)
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+OK
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+OK
+F
+======================================================================
+FAIL: test_AccessGatewayFilter (ClassEval_0_0.AccessGatewayFilterTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_0_0.py", line 235, in test_AccessGatewayFilter
+    self.assertTrue(res)
+AssertionError: False is not true
+
+----------------------------------------------------------------------
+Ran 1 test in 0.001s
+
+FAILED (failures=1)
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+OK
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+OK
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+OK
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.000s
+
+OK
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+OK
+.
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+OK
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+OK
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+OK
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+OK
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+OK
+.
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+OK
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+OK
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+OK
+......
+----------------------------------------------------------------------
+Ran 6 tests in 0.001s
+
+OK
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+OK
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.000s
+
+OK
+.
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+OK
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.000s
+
+OK
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+OK
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+OK
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+OK
+.E...
+======================================================================
+ERROR: test_get_course_average_2 (ClassEval_4_0.AssessmentSystemTestGetCourseAverage)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_4_0.py", line 293, in test_get_course_average_2
+    self.assertEqual(assessment_system.get_course_average('Physics'), 85)
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_4_0.py", line 92, in get_course_average
+    return sum(scores) / len(scores)
+TypeError: unsupported operand type(s) for +: 'int' and 'NoneType'
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.002s
+
+FAILED (errors=1)
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+OK
+.
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+OK
+.........
+----------------------------------------------------------------------
+Ran 9 tests in 0.003s
+
+OK
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.017s
+
+OK
+.
+----------------------------------------------------------------------
+Ran 1 test in 0.004s
+
+OK
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+OK
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+OK
+.
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+OK
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+OK
+.......
+----------------------------------------------------------------------
+Ran 7 tests in 0.001s
+
+OK
+...
+----------------------------------------------------------------------
+Ran 3 tests in 0.001s
+
+OK
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+OK
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.004s
+
+OK
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+OK
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+OK
+..
+----------------------------------------------------------------------
+Ran 2 tests in 0.001s
+
+OK
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+OK
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+OK
+......
+----------------------------------------------------------------------
+Ran 6 tests in 0.001s
+
+OK
+.
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+OK
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+OK
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+OK
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+OK
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+OK
+.
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+OK
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.000s
+
+OK
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+OK
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+OK
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+OK
+.
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+OK
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+OK
+.....E
+======================================================================
+ERROR: test_calculate_hand_value_6 (ClassEval_12_0.BlackjackGameTestCalculateHandValue)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_12_0.py", line 162, in test_calculate_hand_value_6
+    self.assertEqual(blackjackGame.calculate_hand_value(hand), 20)
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_12_0.py", line 61, in calculate_hand_value
+    value += int(rank)
+ValueError: invalid literal for int() with base 10: 'B'
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.002s
+
+FAILED (errors=1)
+......
+----------------------------------------------------------------------
+Ran 6 tests in 0.001s
+
+OK
+.
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+OK
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+OK
+..FFF
+======================================================================
+FAIL: test_remove_book_3 (ClassEval_13_0.BookManagementTestRemoveBook)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_13_0.py", line 115, in test_remove_book_3
+    with self.assertRaises(Exception):
+AssertionError: Exception not raised
+
+======================================================================
+FAIL: test_remove_book_4 (ClassEval_13_0.BookManagementTestRemoveBook)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_13_0.py", line 120, in test_remove_book_4
+    with self.assertRaises(Exception):
+AssertionError: Exception not raised
+
+======================================================================
+FAIL: test_remove_book_5 (ClassEval_13_0.BookManagementTestRemoveBook)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_13_0.py", line 124, in test_remove_book_5
+    with self.assertRaises(Exception):
+AssertionError: Exception not raised
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.008s
+
+FAILED (failures=3)
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+OK
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+OK
+.
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+OK
+..
+----------------------------------------------------------------------
+Ran 2 tests in 0.114s
+
+OK
+.
+----------------------------------------------------------------------
+Ran 1 test in 0.208s
+
+OK
+.
+----------------------------------------------------------------------
+Ran 1 test in 0.046s
+
+OK
+.
+----------------------------------------------------------------------
+Ran 1 test in 0.047s
+
+OK
+.
+----------------------------------------------------------------------
+Ran 1 test in 0.096s
+
+OK
+.
+----------------------------------------------------------------------
+Ran 1 test in 0.222s
+
+OK
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.003s
+
+OK
+....F
+======================================================================
+FAIL: test_mismatch_in_text_5 (ClassEval_15_0.BoyerMooreSearchTestMismatchInText)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_15_0.py", line 111, in test_mismatch_in_text_5
+    self.assertEqual(boyerMooreSearch.mismatch_in_text(3), 5)
+AssertionError: 2 != 5
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.002s
+
+FAILED (failures=1)
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+OK
+.
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+OK
+EEEEEEEE
+======================================================================
+ERROR: test_calculate_1 (ClassEval_16_0.CalculatorTestCalculate)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_16_0.py", line 7, in test_calculate_1
+    calculator = Calculator()
+NameError: name 'Calculator' is not defined
+
+======================================================================
+ERROR: test_calculate_2 (ClassEval_16_0.CalculatorTestCalculate)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_16_0.py", line 12, in test_calculate_2
+    calculator = Calculator()
+NameError: name 'Calculator' is not defined
+
+======================================================================
+ERROR: test_calculate_3 (ClassEval_16_0.CalculatorTestCalculate)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_16_0.py", line 17, in test_calculate_3
+    calculator = Calculator()
+NameError: name 'Calculator' is not defined
+
+======================================================================
+ERROR: test_calculate_4 (ClassEval_16_0.CalculatorTestCalculate)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_16_0.py", line 22, in test_calculate_4
+    calculator = Calculator()
+NameError: name 'Calculator' is not defined
+
+======================================================================
+ERROR: test_calculate_5 (ClassEval_16_0.CalculatorTestCalculate)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_16_0.py", line 27, in test_calculate_5
+    calculator = Calculator()
+NameError: name 'Calculator' is not defined
+
+======================================================================
+ERROR: test_calculate_6 (ClassEval_16_0.CalculatorTestCalculate)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_16_0.py", line 32, in test_calculate_6
+    calculator = Calculator()
+NameError: name 'Calculator' is not defined
+
+======================================================================
+ERROR: test_calculate_7 (ClassEval_16_0.CalculatorTestCalculate)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_16_0.py", line 37, in test_calculate_7
+    calculator = Calculator()
+NameError: name 'Calculator' is not defined
+
+======================================================================
+ERROR: test_calculate_8 (ClassEval_16_0.CalculatorTestCalculate)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_16_0.py", line 42, in test_calculate_8
+    calculator = Calculator()
+NameError: name 'Calculator' is not defined
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.011s
+
+FAILED (errors=8)
+EEEEE
+======================================================================
+ERROR: test_precedence_1 (ClassEval_16_0.CalculatorTestPrecedence)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_16_0.py", line 49, in test_precedence_1
+    calculator = Calculator()
+NameError: name 'Calculator' is not defined
+
+======================================================================
+ERROR: test_precedence_2 (ClassEval_16_0.CalculatorTestPrecedence)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_16_0.py", line 55, in test_precedence_2
+    calculator = Calculator()
+NameError: name 'Calculator' is not defined
+
+======================================================================
+ERROR: test_precedence_3 (ClassEval_16_0.CalculatorTestPrecedence)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_16_0.py", line 61, in test_precedence_3
+    calculator = Calculator()
+NameError: name 'Calculator' is not defined
+
+======================================================================
+ERROR: test_precedence_4 (ClassEval_16_0.CalculatorTestPrecedence)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_16_0.py", line 67, in test_precedence_4
+    calculator = Calculator()
+NameError: name 'Calculator' is not defined
+
+======================================================================
+ERROR: test_precedence_5 (ClassEval_16_0.CalculatorTestPrecedence)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_16_0.py", line 73, in test_precedence_5
+    calculator = Calculator()
+NameError: name 'Calculator' is not defined
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.003s
+
+FAILED (errors=5)
+EEEEE
+======================================================================
+ERROR: test_apply_operator_1 (ClassEval_16_0.CalculatorTestApplyOperator)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_16_0.py", line 81, in test_apply_operator_1
+    calculator = Calculator()
+NameError: name 'Calculator' is not defined
+
+======================================================================
+ERROR: test_apply_operator_2 (ClassEval_16_0.CalculatorTestApplyOperator)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_16_0.py", line 89, in test_apply_operator_2
+    calculator = Calculator()
+NameError: name 'Calculator' is not defined
+
+======================================================================
+ERROR: test_apply_operator_3 (ClassEval_16_0.CalculatorTestApplyOperator)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_16_0.py", line 97, in test_apply_operator_3
+    calculator = Calculator()
+NameError: name 'Calculator' is not defined
+
+======================================================================
+ERROR: test_apply_operator_4 (ClassEval_16_0.CalculatorTestApplyOperator)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_16_0.py", line 105, in test_apply_operator_4
+    calculator = Calculator()
+NameError: name 'Calculator' is not defined
+
+======================================================================
+ERROR: test_apply_operator_5 (ClassEval_16_0.CalculatorTestApplyOperator)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_16_0.py", line 113, in test_apply_operator_5
+    calculator = Calculator()
+NameError: name 'Calculator' is not defined
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.004s
+
+FAILED (errors=5)
+E
+======================================================================
+ERROR: test_calculator (ClassEval_16_0.CalculatorTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_16_0.py", line 123, in test_calculator
+    calculator = Calculator()
+NameError: name 'Calculator' is not defined
+
+----------------------------------------------------------------------
+Ran 1 test in 0.001s
+
+FAILED (errors=1)
+EEEEE
+======================================================================
+ERROR: test_add_event (ClassEval_17_0.CalendarTestAddEvent)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_17_0.py", line 16, in test_add_event
+    calendar = CalendarUtil()
+NameError: name 'CalendarUtil' is not defined
+
+======================================================================
+ERROR: test_add_event_2 (ClassEval_17_0.CalendarTestAddEvent)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_17_0.py", line 24, in test_add_event_2
+    calendar = CalendarUtil()
+NameError: name 'CalendarUtil' is not defined
+
+======================================================================
+ERROR: test_add_event_3 (ClassEval_17_0.CalendarTestAddEvent)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_17_0.py", line 36, in test_add_event_3
+    calendar = CalendarUtil()
+NameError: name 'CalendarUtil' is not defined
+
+======================================================================
+ERROR: test_add_event_4 (ClassEval_17_0.CalendarTestAddEvent)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_17_0.py", line 44, in test_add_event_4
+    calendar = CalendarUtil()
+NameError: name 'CalendarUtil' is not defined
+
+======================================================================
+ERROR: test_add_event_5 (ClassEval_17_0.CalendarTestAddEvent)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_17_0.py", line 52, in test_add_event_5
+    calendar = CalendarUtil()
+NameError: name 'CalendarUtil' is not defined
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.004s
+
+FAILED (errors=5)
+EEEEEE
+======================================================================
+ERROR: test_remove_event (ClassEval_17_0.CalendarTestRemoveEvent)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_17_0.py", line 62, in test_remove_event
+    calendar = CalendarUtil()
+NameError: name 'CalendarUtil' is not defined
+
+======================================================================
+ERROR: test_remove_event_2 (ClassEval_17_0.CalendarTestRemoveEvent)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_17_0.py", line 70, in test_remove_event_2
+    calendar = CalendarUtil()
+NameError: name 'CalendarUtil' is not defined
+
+======================================================================
+ERROR: test_remove_event_3 (ClassEval_17_0.CalendarTestRemoveEvent)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_17_0.py", line 82, in test_remove_event_3
+    calendar = CalendarUtil()
+NameError: name 'CalendarUtil' is not defined
+
+======================================================================
+ERROR: test_remove_event_4 (ClassEval_17_0.CalendarTestRemoveEvent)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_17_0.py", line 94, in test_remove_event_4
+    calendar = CalendarUtil()
+NameError: name 'CalendarUtil' is not defined
+
+======================================================================
+ERROR: test_remove_event_5 (ClassEval_17_0.CalendarTestRemoveEvent)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_17_0.py", line 106, in test_remove_event_5
+    calendar = CalendarUtil()
+NameError: name 'CalendarUtil' is not defined
+
+======================================================================
+ERROR: test_remove_event_6 (ClassEval_17_0.CalendarTestRemoveEvent)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_17_0.py", line 118, in test_remove_event_6
+    calendar = CalendarUtil()
+NameError: name 'CalendarUtil' is not defined
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.006s
+
+FAILED (errors=6)
+EE
+======================================================================
+ERROR: test_get_events (ClassEval_17_0.CalendarTestGetEvents)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_17_0.py", line 127, in test_get_events
+    calendar = CalendarUtil()
+NameError: name 'CalendarUtil' is not defined
+
+======================================================================
+ERROR: test_get_events_2 (ClassEval_17_0.CalendarTestGetEvents)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_17_0.py", line 135, in test_get_events_2
+    calendar = CalendarUtil()
+NameError: name 'CalendarUtil' is not defined
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.001s
+
+FAILED (errors=2)
+EEEEE
+======================================================================
+ERROR: test_is_available (ClassEval_17_0.CalendarTestIsAvailable)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_17_0.py", line 143, in test_is_available
+    calendar = CalendarUtil()
+NameError: name 'CalendarUtil' is not defined
+
+======================================================================
+ERROR: test_is_available_2 (ClassEval_17_0.CalendarTestIsAvailable)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_17_0.py", line 149, in test_is_available_2
+    calendar = CalendarUtil()
+NameError: name 'CalendarUtil' is not defined
+
+======================================================================
+ERROR: test_is_available_3 (ClassEval_17_0.CalendarTestIsAvailable)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_17_0.py", line 155, in test_is_available_3
+    calendar = CalendarUtil()
+NameError: name 'CalendarUtil' is not defined
+
+======================================================================
+ERROR: test_is_available_4 (ClassEval_17_0.CalendarTestIsAvailable)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_17_0.py", line 161, in test_is_available_4
+    calendar = CalendarUtil()
+NameError: name 'CalendarUtil' is not defined
+
+======================================================================
+ERROR: test_is_available_5 (ClassEval_17_0.CalendarTestIsAvailable)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_17_0.py", line 167, in test_is_available_5
+    calendar = CalendarUtil()
+NameError: name 'CalendarUtil' is not defined
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.003s
+
+FAILED (errors=5)
+EEEEE
+======================================================================
+ERROR: test_get_available_slots (ClassEval_17_0.CalendarTestGetAvailableSlots)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_17_0.py", line 175, in test_get_available_slots
+    calendar = CalendarUtil()
+NameError: name 'CalendarUtil' is not defined
+
+======================================================================
+ERROR: test_get_available_slots_2 (ClassEval_17_0.CalendarTestGetAvailableSlots)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_17_0.py", line 182, in test_get_available_slots_2
+    calendar = CalendarUtil()
+NameError: name 'CalendarUtil' is not defined
+
+======================================================================
+ERROR: test_get_available_slots_3 (ClassEval_17_0.CalendarTestGetAvailableSlots)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_17_0.py", line 188, in test_get_available_slots_3
+    calendar = CalendarUtil()
+NameError: name 'CalendarUtil' is not defined
+
+======================================================================
+ERROR: test_get_available_slots_4 (ClassEval_17_0.CalendarTestGetAvailableSlots)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_17_0.py", line 194, in test_get_available_slots_4
+    calendar = CalendarUtil()
+NameError: name 'CalendarUtil' is not defined
+
+======================================================================
+ERROR: test_get_available_slots_5 (ClassEval_17_0.CalendarTestGetAvailableSlots)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_17_0.py", line 200, in test_get_available_slots_5
+    calendar = CalendarUtil()
+NameError: name 'CalendarUtil' is not defined
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.003s
+
+FAILED (errors=5)
+EEEEE
+======================================================================
+ERROR: test_get_upcoming_events (ClassEval_17_0.CalendarTestGetUpcomingEvents)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_17_0.py", line 208, in test_get_upcoming_events
+    calendar = CalendarUtil()
+NameError: name 'CalendarUtil' is not defined
+
+======================================================================
+ERROR: test_get_upcoming_events_2 (ClassEval_17_0.CalendarTestGetUpcomingEvents)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_17_0.py", line 214, in test_get_upcoming_events_2
+    calendar = CalendarUtil()
+NameError: name 'CalendarUtil' is not defined
+
+======================================================================
+ERROR: test_get_upcoming_events_3 (ClassEval_17_0.CalendarTestGetUpcomingEvents)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_17_0.py", line 220, in test_get_upcoming_events_3
+    calendar = CalendarUtil()
+NameError: name 'CalendarUtil' is not defined
+
+======================================================================
+ERROR: test_get_upcoming_events_4 (ClassEval_17_0.CalendarTestGetUpcomingEvents)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_17_0.py", line 226, in test_get_upcoming_events_4
+    calendar = CalendarUtil()
+NameError: name 'CalendarUtil' is not defined
+
+======================================================================
+ERROR: test_get_upcoming_events_5 (ClassEval_17_0.CalendarTestGetUpcomingEvents)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_17_0.py", line 232, in test_get_upcoming_events_5
+    calendar = CalendarUtil()
+NameError: name 'CalendarUtil' is not defined
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.004s
+
+FAILED (errors=5)
+E
+======================================================================
+ERROR: test_main (ClassEval_17_0.CalendarTestMain)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_17_0.py", line 245, in test_main
+    calendar = CalendarUtil()
+NameError: name 'CalendarUtil' is not defined
+
+----------------------------------------------------------------------
+Ran 1 test in 0.001s
+
+FAILED (errors=1)
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+OK
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+OK
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+OK
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+OK
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+OK
+.....E
+======================================================================
+ERROR: test_convert_key_6 (ClassEval_18_0.CamelCaseMapTestConvertKey)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_18_0.py", line 310, in test_convert_key_6
+    self.assertEqual(camelize_map._convert_key(1234), 1234)
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_18_0.py", line 90, in _convert_key
+    return self._to_camel_case(key)
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_18_0.py", line 102, in _to_camel_case
+    parts = key.split('_')
+AttributeError: 'int' object has no attribute 'split'
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.002s
+
+FAILED (errors=1)
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+OK
+.
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+OK
+EEEEE
+======================================================================
+ERROR: test_generate_primes_1 (ClassEval_19_0.ChandrasekharSieveTestGeneratePrimes)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_19_0.py", line 8, in test_generate_primes_1
+    cs = ChandrasekharSieve(20)
+NameError: name 'ChandrasekharSieve' is not defined
+
+======================================================================
+ERROR: test_generate_primes_2 (ClassEval_19_0.ChandrasekharSieveTestGeneratePrimes)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_19_0.py", line 13, in test_generate_primes_2
+    cs = ChandrasekharSieve(18)
+NameError: name 'ChandrasekharSieve' is not defined
+
+======================================================================
+ERROR: test_generate_primes_3 (ClassEval_19_0.ChandrasekharSieveTestGeneratePrimes)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_19_0.py", line 18, in test_generate_primes_3
+    cs = ChandrasekharSieve(15)
+NameError: name 'ChandrasekharSieve' is not defined
+
+======================================================================
+ERROR: test_generate_primes_4 (ClassEval_19_0.ChandrasekharSieveTestGeneratePrimes)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_19_0.py", line 23, in test_generate_primes_4
+    cs = ChandrasekharSieve(10)
+NameError: name 'ChandrasekharSieve' is not defined
+
+======================================================================
+ERROR: test_generate_primes_5 (ClassEval_19_0.ChandrasekharSieveTestGeneratePrimes)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_19_0.py", line 28, in test_generate_primes_5
+    cs = ChandrasekharSieve(1)
+NameError: name 'ChandrasekharSieve' is not defined
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.017s
+
+FAILED (errors=5)
+EEEEE
+======================================================================
+ERROR: test_get_primes_1 (ClassEval_19_0.ChandrasekharSieveTestGetPrimes)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_19_0.py", line 35, in test_get_primes_1
+    cs = ChandrasekharSieve(20)
+NameError: name 'ChandrasekharSieve' is not defined
+
+======================================================================
+ERROR: test_get_primes_2 (ClassEval_19_0.ChandrasekharSieveTestGetPrimes)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_19_0.py", line 41, in test_get_primes_2
+    cs = ChandrasekharSieve(18)
+NameError: name 'ChandrasekharSieve' is not defined
+
+======================================================================
+ERROR: test_get_primes_3 (ClassEval_19_0.ChandrasekharSieveTestGetPrimes)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_19_0.py", line 47, in test_get_primes_3
+    cs = ChandrasekharSieve(15)
+NameError: name 'ChandrasekharSieve' is not defined
+
+======================================================================
+ERROR: test_get_primes_4 (ClassEval_19_0.ChandrasekharSieveTestGetPrimes)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_19_0.py", line 53, in test_get_primes_4
+    cs = ChandrasekharSieve(10)
+NameError: name 'ChandrasekharSieve' is not defined
+
+======================================================================
+ERROR: test_get_primes_5 (ClassEval_19_0.ChandrasekharSieveTestGetPrimes)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_19_0.py", line 59, in test_get_primes_5
+    cs = ChandrasekharSieve(1)
+NameError: name 'ChandrasekharSieve' is not defined
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.003s
+
+FAILED (errors=5)
+E
+======================================================================
+ERROR: test_chandrasekharsieve (ClassEval_19_0.ChandrasekharSieveTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_19_0.py", line 66, in test_chandrasekharsieve
+    cs = ChandrasekharSieve(20)
+NameError: name 'ChandrasekharSieve' is not defined
+
+----------------------------------------------------------------------
+Ran 1 test in 0.001s
+
+FAILED (errors=1)
+......
+----------------------------------------------------------------------
+Ran 6 tests in 0.001s
+
+OK
+......
+----------------------------------------------------------------------
+Ran 6 tests in 0.001s
+
+OK
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.012s
+
+OK
+......
+----------------------------------------------------------------------
+Ran 6 tests in 0.001s
+
+OK
+.
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+OK
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+OK
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+OK
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+OK
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+OK
+..
+----------------------------------------------------------------------
+Ran 2 tests in 0.001s
+
+OK
+...
+----------------------------------------------------------------------
+Ran 3 tests in 0.001s
+
+OK
+...
+----------------------------------------------------------------------
+Ran 3 tests in 0.000s
+
+OK
+....
+----------------------------------------------------------------------
+Ran 4 tests in 0.001s
+
+OK
+...
+----------------------------------------------------------------------
+Ran 3 tests in 0.001s
+
+OK
+..
+----------------------------------------------------------------------
+Ran 2 tests in 0.000s
+
+OK
+.
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+OK
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+OK
+..F.F
+======================================================================
+FAIL: test_count_all_3 (ClassEval_23_0.CombinationCalculatorTestCountAll)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_23_0.py", line 127, in test_count_all_3
+    self.assertEqual(CombinationCalculator.count_all(65), False)
+AssertionError: inf != False
+
+======================================================================
+FAIL: test_count_all_5 (ClassEval_23_0.CombinationCalculatorTestCountAll)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_23_0.py", line 133, in test_count_all_5
+    self.assertEqual(CombinationCalculator.count_all(63), float("inf"))
+AssertionError: 9223372036854775807 != inf
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.003s
+
+FAILED (failures=2)
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+OK
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+OK
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+OK
+.
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+OK
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+OK
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+OK
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+OK
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.000s
+
+OK
+.
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+OK
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.004s
+
+OK
+......
+----------------------------------------------------------------------
+Ran 6 tests in 0.021s
+
+OK
+......
+----------------------------------------------------------------------
+Ran 6 tests in 0.006s
+
+OK
+E
+======================================================================
+ERROR: test_set_cookies (ClassEval_25_0.CookiesUtilTestSetCookies)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_25_0.py", line 193, in test_set_cookies
+    self.cookies_util.set_cookies(request)
+AttributeError: 'CookiesUtil' object has no attribute 'set_cookies'
+
+----------------------------------------------------------------------
+Ran 1 test in 0.001s
+
+FAILED (errors=1)
+.
+----------------------------------------------------------------------
+Ran 1 test in 0.005s
+
+OK
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.091s
+
+OK
+......
+----------------------------------------------------------------------
+Ran 6 tests in 0.082s
+
+OK
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.106s
+
+OK
+.
+----------------------------------------------------------------------
+Ran 1 test in 0.018s
+
+OK
+......
+----------------------------------------------------------------------
+Ran 6 tests in 0.001s
+
+OK
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+OK
+......
+----------------------------------------------------------------------
+Ran 6 tests in 0.001s
+
+OK
+......
+----------------------------------------------------------------------
+Ran 6 tests in 0.001s
+
+OK
+.
+----------------------------------------------------------------------
+Ran 1 test in 0.001s
+
+OK
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.373s
+
+OK
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.366s
+
+OK
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.443s
+
+OK
+.
+----------------------------------------------------------------------
+Ran 1 test in 0.193s
+
+OK
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+OK
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+OK
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.002s
+
+OK
+.
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+OK
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.016s
+
+OK
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.003s
+
+OK
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.002s
+
+OK
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.009s
+
+OK
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.002s
+
+OK
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+OK
+.
+----------------------------------------------------------------------
+Ran 1 test in 0.001s
+
+OK
+EEEEE
+======================================================================
+ERROR: test_correlation_coefficient (ClassEval_31_0.DataStatistics4TestCorrelationCoefficient)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_31_0.py", line 8, in test_correlation_coefficient
+    self.assertEqual(DataStatistics4.correlation_coefficient([1, 2, 3], [4, 5, 6]), 0.9999999999999998)
+NameError: name 'DataStatistics4' is not defined
+
+======================================================================
+ERROR: test_correlation_coefficient_2 (ClassEval_31_0.DataStatistics4TestCorrelationCoefficient)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_31_0.py", line 11, in test_correlation_coefficient_2
+    self.assertEqual(DataStatistics4.correlation_coefficient([1, 1, 1], [2, 2, 2]), 0)
+NameError: name 'DataStatistics4' is not defined
+
+======================================================================
+ERROR: test_correlation_coefficient_3 (ClassEval_31_0.DataStatistics4TestCorrelationCoefficient)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_31_0.py", line 14, in test_correlation_coefficient_3
+    self.assertEqual(DataStatistics4.correlation_coefficient([1, 2, 3], [1, 2, 3]), 0.9999999999999998)
+NameError: name 'DataStatistics4' is not defined
+
+======================================================================
+ERROR: test_correlation_coefficient_4 (ClassEval_31_0.DataStatistics4TestCorrelationCoefficient)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_31_0.py", line 17, in test_correlation_coefficient_4
+    self.assertEqual(DataStatistics4.correlation_coefficient([1, 2, 3], [1, 2, 4]), 0.9819805060619659)
+NameError: name 'DataStatistics4' is not defined
+
+======================================================================
+ERROR: test_correlation_coefficient_5 (ClassEval_31_0.DataStatistics4TestCorrelationCoefficient)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_31_0.py", line 20, in test_correlation_coefficient_5
+    self.assertEqual(DataStatistics4.correlation_coefficient([1, 2, 3], [1, 5, 3]), 0.4999999999999999)
+NameError: name 'DataStatistics4' is not defined
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.030s
+
+FAILED (errors=5)
+EEEEE
+======================================================================
+ERROR: test_skewness (ClassEval_31_0.DataStatistics4TestSkewness)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_31_0.py", line 25, in test_skewness
+    self.assertEqual(DataStatistics4.skewness([1, 2, 5]), 2.3760224064818463)
+NameError: name 'DataStatistics4' is not defined
+
+======================================================================
+ERROR: test_skewness_2 (ClassEval_31_0.DataStatistics4TestSkewness)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_31_0.py", line 28, in test_skewness_2
+    self.assertEqual(DataStatistics4.skewness([1, 1, 1]), 0)
+NameError: name 'DataStatistics4' is not defined
+
+======================================================================
+ERROR: test_skewness_3 (ClassEval_31_0.DataStatistics4TestSkewness)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_31_0.py", line 31, in test_skewness_3
+    self.assertEqual(DataStatistics4.skewness([1, 2, 3]), 0)
+NameError: name 'DataStatistics4' is not defined
+
+======================================================================
+ERROR: test_skewness_4 (ClassEval_31_0.DataStatistics4TestSkewness)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_31_0.py", line 34, in test_skewness_4
+    self.assertEqual(DataStatistics4.skewness([1, 2, 4]), 1.7181079837227264)
+NameError: name 'DataStatistics4' is not defined
+
+======================================================================
+ERROR: test_skewness_5 (ClassEval_31_0.DataStatistics4TestSkewness)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_31_0.py", line 37, in test_skewness_5
+    self.assertEqual(DataStatistics4.skewness([1, 5, 3]), 0.0)
+NameError: name 'DataStatistics4' is not defined
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.003s
+
+FAILED (errors=5)
+EEEEE
+======================================================================
+ERROR: test_kurtosis (ClassEval_31_0.DataStatistics4TestKurtosis)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_31_0.py", line 42, in test_kurtosis
+    self.assertEqual(DataStatistics4.kurtosis([1, 2, 5]), -1.5000000000000002)
+NameError: name 'DataStatistics4' is not defined
+
+======================================================================
+ERROR: test_kurtosis_2 (ClassEval_31_0.DataStatistics4TestKurtosis)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_31_0.py", line 45, in test_kurtosis_2
+    self.assertTrue(math.isnan(DataStatistics4.kurtosis([1, 1, 1])))
+NameError: name 'DataStatistics4' is not defined
+
+======================================================================
+ERROR: test_kurtosis_3 (ClassEval_31_0.DataStatistics4TestKurtosis)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_31_0.py", line 48, in test_kurtosis_3
+    self.assertEqual(DataStatistics4.kurtosis([1, 2, 3]), -1.5000000000000002)
+NameError: name 'DataStatistics4' is not defined
+
+======================================================================
+ERROR: test_kurtosis_4 (ClassEval_31_0.DataStatistics4TestKurtosis)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_31_0.py", line 51, in test_kurtosis_4
+    self.assertEqual(DataStatistics4.kurtosis([1, 2, 4]), -1.4999999999999996)
+NameError: name 'DataStatistics4' is not defined
+
+======================================================================
+ERROR: test_kurtosis_5 (ClassEval_31_0.DataStatistics4TestKurtosis)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_31_0.py", line 54, in test_kurtosis_5
+    self.assertEqual(DataStatistics4.kurtosis([1, 5, 3]), -1.5000000000000002)
+NameError: name 'DataStatistics4' is not defined
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.005s
+
+FAILED (errors=5)
+EEEEE
+======================================================================
+ERROR: test_pdf (ClassEval_31_0.DataStatistics4TestPDF)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_31_0.py", line 59, in test_pdf
+    self.assertEqual(DataStatistics4.pdf([1, 2, 3], 1, 1),
+NameError: name 'DataStatistics4' is not defined
+
+======================================================================
+ERROR: test_pdf_2 (ClassEval_31_0.DataStatistics4TestPDF)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_31_0.py", line 63, in test_pdf_2
+    self.assertEqual(DataStatistics4.pdf([1, 1, 1], 1, 1),
+NameError: name 'DataStatistics4' is not defined
+
+======================================================================
+ERROR: test_pdf_3 (ClassEval_31_0.DataStatistics4TestPDF)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_31_0.py", line 67, in test_pdf_3
+    self.assertEqual(DataStatistics4.pdf([1, 2, 3], 2, 1),
+NameError: name 'DataStatistics4' is not defined
+
+======================================================================
+ERROR: test_pdf_4 (ClassEval_31_0.DataStatistics4TestPDF)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_31_0.py", line 71, in test_pdf_4
+    self.assertEqual(DataStatistics4.pdf([1, 2, 3], 1, 2),
+NameError: name 'DataStatistics4' is not defined
+
+======================================================================
+ERROR: test_pdf_5 (ClassEval_31_0.DataStatistics4TestPDF)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_31_0.py", line 75, in test_pdf_5
+    self.assertEqual(DataStatistics4.pdf([1, 2, 3], 2, 2),
+NameError: name 'DataStatistics4' is not defined
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.003s
+
+FAILED (errors=5)
+E
+======================================================================
+ERROR: test_main (ClassEval_31_0.DataStatistics4TestMain)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_31_0.py", line 81, in test_main
+    self.assertEqual(DataStatistics4.correlation_coefficient([1, 2, 3], [4, 5, 6]), 0.9999999999999998)
+NameError: name 'DataStatistics4' is not defined
+
+----------------------------------------------------------------------
+Ran 1 test in 0.001s
+
+FAILED (errors=1)
+.......
+----------------------------------------------------------------------
+Ran 7 tests in 0.001s
+
+OK
+......
+----------------------------------------------------------------------
+Ran 6 tests in 0.001s
+
+OK
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+OK
+.
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+OK
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+OK
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+OK
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+OK
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+OK
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.003s
+
+OK
+.
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+OK
+..FFF
+======================================================================
+FAIL: test_find_blank_3 (ClassEval_35_0.EightPuzzleTestFindBlank)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_35_0.py", line 128, in test_find_blank_3
+    self.assertEqual(eightPuzzle.find_blank(state), None)
+AssertionError: (-1, -1) != None
+
+======================================================================
+FAIL: test_find_blank_4 (ClassEval_35_0.EightPuzzleTestFindBlank)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_35_0.py", line 133, in test_find_blank_4
+    self.assertEqual(eightPuzzle.find_blank(state), None)
+AssertionError: (-1, -1) != None
+
+======================================================================
+FAIL: test_find_blank_5 (ClassEval_35_0.EightPuzzleTestFindBlank)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_35_0.py", line 138, in test_find_blank_5
+    self.assertEqual(eightPuzzle.find_blank(state), None)
+AssertionError: (-1, -1) != None
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.006s
+
+FAILED (failures=3)
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+OK
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+OK
+.....F
+======================================================================
+FAIL: test_solve_6 (ClassEval_35_0.EightPuzzleTestSolve)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_35_0.py", line 249, in test_solve_6
+    self.assertEqual(result, expected)
+AssertionError: [] != None
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.472s
+
+FAILED (failures=1)
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+OK
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+OK
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+OK
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.003s
+
+OK
+.F...
+======================================================================
+FAIL: test_clear_inbox_2 (ClassEval_36_0.EmailClientTestClearInbox)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_36_0.py", line 272, in test_clear_inbox_2
+    self.assertEqual(receiver.inbox, [{'size': 10},{'size': 20},{'size': 15}])
+AssertionError: Lists differ: [{'size': 15}] != [{'size': 10}, {'size': 20}, {'size': 15}]
+
+First differing element 0:
+{'size': 15}
+{'size': 10}
+
+Second list contains 2 additional elements.
+First extra element 1:
+{'size': 20}
+
+- [{'size': 15}]
++ [{'size': 10}, {'size': 20}, {'size': 15}]
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.002s
+
+FAILED (failures=1)
+.
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+OK
+......
+----------------------------------------------------------------------
+Ran 6 tests in 0.001s
+
+OK
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+OK
+......
+----------------------------------------------------------------------
+Ran 6 tests in 0.001s
+
+OK
+.
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+OK
+.....F
+======================================================================
+FAIL: test_read_excel_6 (ClassEval_38_0.ExcelProcessorTestReadExcel)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_38_0.py", line 205, in test_read_excel_6
+    self.assertEqual(res, None)
+AssertionError: [] != None
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.395s
+
+FAILED (failures=1)
+......
+----------------------------------------------------------------------
+Ran 6 tests in 0.361s
+
+OK
+FFFFFF
+======================================================================
+FAIL: test_process_excel_data_1 (ClassEval_38_0.ExcelProcessorTestProcessExcelData)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_38_0.py", line 325, in test_process_excel_data_1
+    self.assertEqual(processed_data, expected_processed_data)
+AssertionError: Lists differ: [('NAME', 'Age', 'Country'), ('JOHN', 25, 'US[50 chars]ia')] != [('Name', 'Age', 'Country', 'AGE'), ('John', [69 chars] 35)]
+
+First differing element 0:
+('NAME', 'Age', 'Country')
+('Name', 'Age', 'Country', 'AGE')
+
+- [('NAME', 'Age', 'Country'),
+?     ^^^
+
++ [('Name', 'Age', 'Country', 'AGE'),
+?     ^^^                   +++++++
+
+-  ('JOHN', 25, 'USA'),
+?     ^^^
+
++  ('John', 25, 'USA', 25),
+?     ^^^            ++++
+
+-  ('ALICE', 30, 'Canada'),
+?     ^^^^
+
++  ('Alice', 30, 'Canada', 30),
+?     ^^^^               ++++
+
+-  ('BOB', 35, 'Australia')]
+?     ^^
+
++  ('Bob', 35, 'Australia', 35)]
+?     ^^                  ++++
+
+
+======================================================================
+FAIL: test_process_excel_data_2 (ClassEval_38_0.ExcelProcessorTestProcessExcelData)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_38_0.py", line 353, in test_process_excel_data_2
+    self.assertEqual(processed_data, expected_processed_data)
+AssertionError: Lists differ: [('Name', 'Age', 'COUNTRY'), ('John', 25, 'USA'), ('Alice', [35 chars]IA')] != [('Name', 'Age', 'Country', 'NAME'), ('John', 25, 'USA', 'JO[67 chars]OB')]
+
+First differing element 0:
+('Name', 'Age', 'COUNTRY')
+('Name', 'Age', 'Country', 'NAME')
+
+- [('Name', 'Age', 'COUNTRY'),
++ [('Name', 'Age', 'Country', 'NAME'),
+-  ('John', 25, 'USA'),
++  ('John', 25, 'USA', 'JOHN'),
+?                    ++++++++
+
+-  ('Alice', 30, 'CANADA'),
+-  ('Bob', 35, 'AUSTRALIA')]
++  ('Alice', 30, 'Canada', 'ALICE'),
++  ('Bob', 35, 'Australia', 'BOB')]
+
+======================================================================
+FAIL: test_process_excel_data_3 (ClassEval_38_0.ExcelProcessorTestProcessExcelData)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_38_0.py", line 381, in test_process_excel_data_3
+    self.assertEqual(processed_data, expected_processed_data)
+AssertionError: Lists differ: [('Name', 'AGE', 'Country'), ('John', '25', 'USA'), ([48 chars]ia')] != [('Name', 'Age', 'Country', 'COUNTRY'), ('John', 25, [83 chars]IA')]
+
+First differing element 0:
+('Name', 'AGE', 'Country')
+('Name', 'Age', 'Country', 'COUNTRY')
+
+- [('Name', 'AGE', 'Country'),
+?             ^^
+
++ [('Name', 'Age', 'Country', 'COUNTRY'),
+?             ^^            +++++++++++
+
+-  ('John', '25', 'USA'),
+?           -
+
++  ('John', 25, 'USA', 'USA'),
+?             ++++++
+
+-  ('Alice', '30', 'Canada'),
+?            -  -
+
++  ('Alice', 30, 'Canada', 'CANADA'),
+?                        ++++++++++
+
+-  ('Bob', '35', 'Australia')]
+?          -  -
+
++  ('Bob', 35, 'Australia', 'AUSTRALIA')]
+?                         +++++++++++++
+
+
+======================================================================
+FAIL: test_process_excel_data_4 (ClassEval_38_0.ExcelProcessorTestProcessExcelData)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_38_0.py", line 409, in test_process_excel_data_4
+    self.assertEqual(processed_data, expected_processed_data)
+AssertionError: Lists differ: [('Name', 'AGE', 'COUNTRY'), ('John', '25', 'USA'), ([48 chars]IA')] != [('Name', 'Age', 'COUNTRY', 'COUNTRY'), ('John', 25, [83 chars]IA')]
+
+First differing element 0:
+('Name', 'AGE', 'COUNTRY')
+('Name', 'Age', 'COUNTRY', 'COUNTRY')
+
+- [('Name', 'AGE', 'COUNTRY'),
+?             ^^
+
++ [('Name', 'Age', 'COUNTRY', 'COUNTRY'),
+?             ^^  +++++++++++
+
+-  ('John', '25', 'USA'),
+?           -
+
++  ('John', 25, 'USA', 'USA'),
+?             ++++++
+
+-  ('Alice', '30', 'CANADA'),
+?            -
+
++  ('Alice', 30, 'CANADA', 'CANADA'),
+?              +++++++++
+
+-  ('Bob', '35', 'AUSTRALIA')]
+?          -
+
++  ('Bob', 35, 'AUSTRALIA', 'AUSTRALIA')]
+?            ++++++++++++
+
+
+======================================================================
+FAIL: test_process_excel_data_5 (ClassEval_38_0.ExcelProcessorTestProcessExcelData)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_38_0.py", line 437, in test_process_excel_data_5
+    self.assertEqual(processed_data, expected_processed_data)
+AssertionError: Lists differ: [('NAME', 'AGE', 'COUNTRY'), ('JOHN', 25, 'US[50 chars]IA')] != [('Name', 'AGE', 'COUNTRY', 'AGE'), ('John', [69 chars] 35)]
+
+First differing element 0:
+('NAME', 'AGE', 'COUNTRY')
+('Name', 'AGE', 'COUNTRY', 'AGE')
+
+- [('NAME', 'AGE', 'COUNTRY'),
+?     ^^^
+
++ [('Name', 'AGE', 'COUNTRY', 'AGE'),
+?     ^^^                   +++++++
+
+-  ('JOHN', 25, 'USA'),
+?     ^^^
+
++  ('John', 25, 'USA', 25),
+?     ^^^            ++++
+
+-  ('ALICE', 30, 'CANADA'),
+?     ^^^^
+
++  ('Alice', 30, 'CANADA', 30),
+?     ^^^^               ++++
+
+-  ('BOB', 35, 'AUSTRALIA')]
+?     ^^
+
++  ('Bob', 35, 'AUSTRALIA', 35)]
+?     ^^                  ++++
+
+
+======================================================================
+FAIL: test_process_excel_data_6 (ClassEval_38_0.ExcelProcessorTestProcessExcelData)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_38_0.py", line 455, in test_process_excel_data_6
+    self.assertEqual(res, 0)
+AssertionError: (1, 'test_data_processed.xlsx') != 0
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.717s
+
+FAILED (failures=6)
+F
+======================================================================
+FAIL: test_ExcelProcessor (ClassEval_38_0.ExcelProcessorTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_38_0.py", line 522, in test_ExcelProcessor
+    self.assertEqual(processed_data, expected_processed_data)
+AssertionError: Lists differ: [('NAME', 'Age', 'Country'), ('JOHN', 25, 'US[50 chars]ia')] != [('Name', 'Age', 'Country', 'AGE'), ('John', [69 chars] 35)]
+
+First differing element 0:
+('NAME', 'Age', 'Country')
+('Name', 'Age', 'Country', 'AGE')
+
+- [('NAME', 'Age', 'Country'),
+?     ^^^
+
++ [('Name', 'Age', 'Country', 'AGE'),
+?     ^^^                   +++++++
+
+-  ('JOHN', 25, 'USA'),
+?     ^^^
+
++  ('John', 25, 'USA', 25),
+?     ^^^            ++++
+
+-  ('ALICE', 30, 'Canada'),
+?     ^^^^
+
++  ('Alice', 30, 'Canada', 30),
+?     ^^^^               ++++
+
+-  ('BOB', 35, 'Australia')]
+?     ^^
+
++  ('Bob', 35, 'Australia', 35)]
+?     ^^                  ++++
+
+
+----------------------------------------------------------------------
+Ran 1 test in 0.205s
+
+FAILED (failures=1)
+EEEEE
+======================================================================
+ERROR: test_get_BMI (ClassEval_40_0.FitnessTrackerTestGetBMI)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_40_0.py", line 8, in test_get_BMI
+    fitnessTracker = FitnessTracker(1.8, 70, 20, "male")
+NameError: name 'FitnessTracker' is not defined
+
+======================================================================
+ERROR: test_get_BMI_2 (ClassEval_40_0.FitnessTrackerTestGetBMI)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_40_0.py", line 12, in test_get_BMI_2
+    fitnessTracker = FitnessTracker(1.8, 50, 20, "male")
+NameError: name 'FitnessTracker' is not defined
+
+======================================================================
+ERROR: test_get_BMI_3 (ClassEval_40_0.FitnessTrackerTestGetBMI)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_40_0.py", line 16, in test_get_BMI_3
+    fitnessTracker = FitnessTracker(1.72, 53, 20, "male")
+NameError: name 'FitnessTracker' is not defined
+
+======================================================================
+ERROR: test_get_BMI_4 (ClassEval_40_0.FitnessTrackerTestGetBMI)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_40_0.py", line 20, in test_get_BMI_4
+    fitnessTracker = FitnessTracker(1.72, 60, 20, "male")
+NameError: name 'FitnessTracker' is not defined
+
+======================================================================
+ERROR: test_get_BMI_5 (ClassEval_40_0.FitnessTrackerTestGetBMI)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_40_0.py", line 24, in test_get_BMI_5
+    fitnessTracker = FitnessTracker(1.72, 65, 20, "male")
+NameError: name 'FitnessTracker' is not defined
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.028s
+
+FAILED (errors=5)
+EEEEE
+======================================================================
+ERROR: test_condition_judge (ClassEval_40_0.FitnessTrackerTestConditionJudge)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_40_0.py", line 30, in test_condition_judge
+    fitnessTracker = FitnessTracker(1.8, 45, 20, "female")
+NameError: name 'FitnessTracker' is not defined
+
+======================================================================
+ERROR: test_condition_judge_2 (ClassEval_40_0.FitnessTrackerTestConditionJudge)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_40_0.py", line 34, in test_condition_judge_2
+    fitnessTracker = FitnessTracker(1.72, 80, 22, "female")
+NameError: name 'FitnessTracker' is not defined
+
+======================================================================
+ERROR: test_condition_judge_3 (ClassEval_40_0.FitnessTrackerTestConditionJudge)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_40_0.py", line 38, in test_condition_judge_3
+    fitnessTracker = FitnessTracker(1.72, 53, 22, "male")
+NameError: name 'FitnessTracker' is not defined
+
+======================================================================
+ERROR: test_condition_judge_4 (ClassEval_40_0.FitnessTrackerTestConditionJudge)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_40_0.py", line 42, in test_condition_judge_4
+    fitnessTracker = FitnessTracker(1.72, 60, 22, "male")
+NameError: name 'FitnessTracker' is not defined
+
+======================================================================
+ERROR: test_condition_judge_5 (ClassEval_40_0.FitnessTrackerTestConditionJudge)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_40_0.py", line 46, in test_condition_judge_5
+    fitnessTracker = FitnessTracker(1.72, 75, 22, "male")
+NameError: name 'FitnessTracker' is not defined
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.004s
+
+FAILED (errors=5)
+EEEEE
+======================================================================
+ERROR: test_calculate_calorie_intake (ClassEval_40_0.FitnessTrackerTestCaculateCalorieIntake)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_40_0.py", line 52, in test_calculate_calorie_intake
+    fitnessTracker = FitnessTracker(1.8, 70, 20, "female")
+NameError: name 'FitnessTracker' is not defined
+
+======================================================================
+ERROR: test_calculate_calorie_intake_2 (ClassEval_40_0.FitnessTrackerTestCaculateCalorieIntake)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_40_0.py", line 56, in test_calculate_calorie_intake_2
+    fitnessTracker = FitnessTracker(1.72, 80, 22, "female")
+NameError: name 'FitnessTracker' is not defined
+
+======================================================================
+ERROR: test_calculate_calorie_intake_3 (ClassEval_40_0.FitnessTrackerTestCaculateCalorieIntake)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_40_0.py", line 60, in test_calculate_calorie_intake_3
+    fitnessTracker = FitnessTracker(1.72, 53, 22, "male")
+NameError: name 'FitnessTracker' is not defined
+
+======================================================================
+ERROR: test_calculate_calorie_intake_4 (ClassEval_40_0.FitnessTrackerTestCaculateCalorieIntake)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_40_0.py", line 64, in test_calculate_calorie_intake_4
+    fitnessTracker = FitnessTracker(1.72, 60, 22, "male")
+NameError: name 'FitnessTracker' is not defined
+
+======================================================================
+ERROR: test_calculate_calorie_intake_5 (ClassEval_40_0.FitnessTrackerTestCaculateCalorieIntake)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_40_0.py", line 68, in test_calculate_calorie_intake_5
+    fitnessTracker = FitnessTracker(1.72, 75, 22, "male")
+NameError: name 'FitnessTracker' is not defined
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.005s
+
+FAILED (errors=5)
+E
+======================================================================
+ERROR: test_main (ClassEval_40_0.FitnessTrackerTestMain)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_40_0.py", line 74, in test_main
+    fitnessTracker = FitnessTracker(1.8, 70, 20, "male")
+NameError: name 'FitnessTracker' is not defined
+
+----------------------------------------------------------------------
+Ran 1 test in 0.001s
+
+FAILED (errors=1)
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.018s
+
+OK
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+OK
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.004s
+
+OK
+.
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+OK
+......
+----------------------------------------------------------------------
+Ran 6 tests in 0.002s
+
+OK
+......
+----------------------------------------------------------------------
+Ran 6 tests in 0.001s
+
+OK
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+OK
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+OK
+.
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+OK
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+OK
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+OK
+.....F
+======================================================================
+FAIL: test_update_employee_6 (ClassEval_43_0.HRManagementSystemTestUpdateEmployee)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_43_0.py", line 219, in test_update_employee_6
+    self.assertEqual(hr_system.update_employee(1, {'Name': 'John', 'position': 'Manager', 'department': 'Sales', 'salary': 20000}), False)
+AssertionError: True != False
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.002s
+
+FAILED (failures=1)
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+OK
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+OK
+FF
+======================================================================
+FAIL: test_main (ClassEval_43_0.HRManagementSystemTestMain)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_43_0.py", line 289, in test_main
+    self.assertEqual(hr_system.employees[1], {'name': 'John Doe Jr.', 'position': 'Manager', 'department': 'HR', 'salary': 5500})
+AssertionError: {'nam[15 chars]r.', 'salary': 5500} != {'nam[15 chars]r.', 'position': 'Manager', 'department': 'HR', 'salary': 5500}
+- {'name': 'John Doe Jr.', 'salary': 5500}
++ {'department': 'HR',
++  'name': 'John Doe Jr.',
++  'position': 'Manager',
++  'salary': 5500}
+
+======================================================================
+FAIL: test_main_2 (ClassEval_43_0.HRManagementSystemTestMain)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_43_0.py", line 308, in test_main_2
+    self.assertEqual(hr_system.employees[1], {'name': 'John Doe Jr.', 'position': 'Manager', 'department': 'HR', 'salary': 5500})
+AssertionError: {'nam[15 chars]r.', 'salary': 5500} != {'nam[15 chars]r.', 'position': 'Manager', 'department': 'HR', 'salary': 5500}
+- {'name': 'John Doe Jr.', 'salary': 5500}
++ {'department': 'HR',
++  'name': 'John Doe Jr.',
++  'position': 'Manager',
++  'salary': 5500}
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.003s
+
+FAILED (failures=2)
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.187s
+
+OK
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.070s
+
+OK
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.030s
+
+OK
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.035s
+
+OK
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.038s
+
+OK
+.
+----------------------------------------------------------------------
+Ran 1 test in 0.021s
+
+OK
+....F.E
+======================================================================
+ERROR: test_interpolate_1d_7 (ClassEval_46_0.InterpolationTestInterpolate1d)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_46_0.py", line 138, in test_interpolate_1d_7
+    self.assertEqual(interpolation.interpolate_1d([], [], [[], []]), [])
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_46_0.py", line 28, in interpolate_1d
+    xi_clamped = max(x[0], min(x[-1], xi))
+IndexError: list index out of range
+
+======================================================================
+FAIL: test_interpolate_1d_5 (ClassEval_46_0.InterpolationTestInterpolate1d)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_46_0.py", line 130, in test_interpolate_1d_5
+    self.assertEqual(interpolation.interpolate_1d([1, 6, 4], [1, 7, 5], [2, 3]), [2.2, 3.4])
+AssertionError: Lists differ: [2.2, 3.4000000000000004] != [2.2, 3.4]
+
+First differing element 1:
+3.4000000000000004
+3.4
+
+- [2.2, 3.4000000000000004]
++ [2.2, 3.4]
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.003s
+
+FAILED (failures=1, errors=1)
+.FFF.
+======================================================================
+FAIL: test_interpolate_2d_2 (ClassEval_46_0.InterpolationTestInterpolate2d)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_46_0.py", line 150, in test_interpolate_2d_2
+    self.assertEqual(
+AssertionError: Lists differ: [7.5, 8.5] != [4.5]
+
+First differing element 0:
+7.5
+4.5
+
+First list contains 1 additional elements.
+First extra element 1:
+8.5
+
+- [7.5, 8.5]
++ [4.5]
+
+======================================================================
+FAIL: test_interpolate_2d_3 (ClassEval_46_0.InterpolationTestInterpolate2d)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_46_0.py", line 156, in test_interpolate_2d_3
+    self.assertEqual(
+AssertionError: Lists differ: [4.5, 7.5] != [7.5]
+
+First differing element 0:
+4.5
+7.5
+
+First list contains 1 additional elements.
+First extra element 1:
+7.5
+
+- [4.5, 7.5]
++ [7.5]
+
+======================================================================
+FAIL: test_interpolate_2d_4 (ClassEval_46_0.InterpolationTestInterpolate2d)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_46_0.py", line 162, in test_interpolate_2d_4
+    self.assertEqual(
+AssertionError: Lists differ: [9.0, 9.0] != [9.0]
+
+First list contains 1 additional elements.
+First extra element 1:
+9.0
+
+- [9.0, 9.0]
++ [9.0]
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.003s
+
+FAILED (failures=3)
+.
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+OK
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+OK
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+OK
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+OK
+.
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+OK
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+OK
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+OK
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+OK
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+OK
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+OK
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.002s
+
+OK
+EEEEE
+======================================================================
+ERROR: test_matches_requirements (ClassEval_49_0.JobMarketplaceTestMatchesRequirements)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_49_0.py", line 319, in test_matches_requirements
+    self.assertEqual(jobMarketplace.matches_requirements({"name": "Tom", "skills": ['skill1', 'skill2'], "experience": "experience"}, ['skill1', 'skill2']), True)
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_49_0.py", line 102, in matches_requirements
+    return all(req in resume['skills'] for req in job['requirements'])
+TypeError: list indices must be integers or slices, not str
+
+======================================================================
+ERROR: test_matches_requirements_2 (ClassEval_49_0.JobMarketplaceTestMatchesRequirements)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_49_0.py", line 323, in test_matches_requirements_2
+    self.assertEqual(jobMarketplace.matches_requirements({"name": "Tom", "skills": ['skill1', 'skill2'], "experience": "experience"}, ['skill3', 'skill4']), False)
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_49_0.py", line 102, in matches_requirements
+    return all(req in resume['skills'] for req in job['requirements'])
+TypeError: list indices must be integers or slices, not str
+
+======================================================================
+ERROR: test_matches_requirements_3 (ClassEval_49_0.JobMarketplaceTestMatchesRequirements)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_49_0.py", line 327, in test_matches_requirements_3
+    self.assertEqual(jobMarketplace.matches_requirements({"name": "Tom", "skills": ['skill1', 'skill2'], "experience": "experience"}, ['skill5', 'skill6']), False)
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_49_0.py", line 102, in matches_requirements
+    return all(req in resume['skills'] for req in job['requirements'])
+TypeError: list indices must be integers or slices, not str
+
+======================================================================
+ERROR: test_matches_requirements_4 (ClassEval_49_0.JobMarketplaceTestMatchesRequirements)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_49_0.py", line 331, in test_matches_requirements_4
+    self.assertEqual(jobMarketplace.matches_requirements({"name": "Tom", "skills": ['skill1', 'skill2'], "experience": "experience"}, ['skill1', 'skill3']), False)
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_49_0.py", line 102, in matches_requirements
+    return all(req in resume['skills'] for req in job['requirements'])
+TypeError: list indices must be integers or slices, not str
+
+======================================================================
+ERROR: test_matches_requirements_5 (ClassEval_49_0.JobMarketplaceTestMatchesRequirements)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_49_0.py", line 335, in test_matches_requirements_5
+    self.assertEqual(jobMarketplace.matches_requirements({"name": "Tom", "skills": ['skill1', 'skill2'], "experience": "experience"}, ['skill1']), False)
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_49_0.py", line 102, in matches_requirements
+    return all(req in resume['skills'] for req in job['requirements'])
+TypeError: list indices must be integers or slices, not str
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.004s
+
+FAILED (errors=5)
+E
+======================================================================
+ERROR: test_main (ClassEval_49_0.JobMarketplaceTestMain)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_49_0.py", line 352, in test_main
+    self.assertEqual(jobMarketplace.matches_requirements({"name": "Tom", "skills": ['skill1', 'skill2'], "experience": "experience"}, ['skill1', 'skill2']), True)
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_49_0.py", line 102, in matches_requirements
+    return all(req in resume['skills'] for req in job['requirements'])
+TypeError: list indices must be integers or slices, not str
+
+----------------------------------------------------------------------
+Ran 1 test in 0.001s
+
+FAILED (errors=1)
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.036s
+
+OK
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.025s
+
+OK
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.060s
+
+OK
+.
+----------------------------------------------------------------------
+Ran 1 test in 0.008s
+
+OK
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.003s
+
+OK
+.FFFF
+======================================================================
+FAIL: test_fleiss_kappa_2 (ClassEval_51_0.KappaCalculatorTestFleissKappa)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_51_0.py", line 104, in test_fleiss_kappa_2
+    self.assertEqual(KappaCalculator.fleiss_kappa([[1, 0, 0, 0, 14],
+AssertionError: 0.20852557021248944 != 0.2115748928799344
+
+======================================================================
+FAIL: test_fleiss_kappa_3 (ClassEval_51_0.KappaCalculatorTestFleissKappa)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_51_0.py", line 116, in test_fleiss_kappa_3
+    self.assertEqual(KappaCalculator.fleiss_kappa([[0, 1, 0, 0, 14],
+AssertionError: 0.20770181487022701 != 0.21076904123090398
+
+======================================================================
+FAIL: test_fleiss_kappa_4 (ClassEval_51_0.KappaCalculatorTestFleissKappa)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_51_0.py", line 128, in test_fleiss_kappa_4
+    self.assertEqual(KappaCalculator.fleiss_kappa([[0, 0, 1, 0, 14],
+AssertionError: 0.20656634746922026 != 0.2096583016522883
+
+======================================================================
+FAIL: test_fleiss_kappa_5 (ClassEval_51_0.KappaCalculatorTestFleissKappa)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_51_0.py", line 140, in test_fleiss_kappa_5
+    self.assertEqual(KappaCalculator.fleiss_kappa([[0, 0, 0, 1, 14],
+AssertionError: 0.2084226944823552 != 0.21147425143148907
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.005s
+
+FAILED (failures=4)
+.
+----------------------------------------------------------------------
+Ran 1 test in 0.001s
+
+OK
+EEEEE
+======================================================================
+ERROR: test_get_pos_tag_1 (ClassEval_52_0.LemmatizationTestGetPosTag)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_52_0.py", line 126, in test_get_pos_tag_1
+    result = lemmatization.get_pos_tag("I am running in a race.")
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_52_0.py", line 74, in get_pos_tag
+    tokens = word_tokenize(clean_sentence)
+  File "D:\Master-Ly\ClassEval\venv\lib\site-packages\nltk\tokenize\__init__.py", line 142, in word_tokenize
+    sentences = [text] if preserve_line else sent_tokenize(text, language)
+  File "D:\Master-Ly\ClassEval\venv\lib\site-packages\nltk\tokenize\__init__.py", line 119, in sent_tokenize
+    tokenizer = _get_punkt_tokenizer(language)
+  File "D:\Master-Ly\ClassEval\venv\lib\site-packages\nltk\tokenize\__init__.py", line 105, in _get_punkt_tokenizer
+    return PunktTokenizer(language)
+  File "D:\Master-Ly\ClassEval\venv\lib\site-packages\nltk\tokenize\punkt.py", line 1795, in __init__
+    self.load_lang(lang)
+  File "D:\Master-Ly\ClassEval\venv\lib\site-packages\nltk\tokenize\punkt.py", line 1800, in load_lang
+    lang_dir = find(f"tokenizers/punkt_tab/{lang}/")
+  File "D:\Master-Ly\ClassEval\venv\lib\site-packages\nltk\data.py", line 877, in find
+    raise LookupError(resource_not_found)
+LookupError: 
+**********************************************************************
+  Resource 'punkt_tab' not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  >>> import nltk
+  >>> nltk.download('punkt_tab')
+
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load 'tokenizers/punkt_tab/english/'
+
+  Searched in:
+    - 'C:\\Users\\Nguye/nltk_data'
+    - 'D:\\Master-Ly\\ClassEval\\venv\\nltk_data'
+    - 'D:\\Master-Ly\\ClassEval\\venv\\share\\nltk_data'
+    - 'D:\\Master-Ly\\ClassEval\\venv\\lib\\nltk_data'
+    - 'C:\\Users\\Nguye\\AppData\\Roaming\\nltk_data'
+    - 'C:\\nltk_data'
+    - 'D:\\nltk_data'
+    - 'E:\\nltk_data'
+**********************************************************************
+
+
+======================================================================
+ERROR: test_get_pos_tag_2 (ClassEval_52_0.LemmatizationTestGetPosTag)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_52_0.py", line 132, in test_get_pos_tag_2
+    result = lemmatization.get_pos_tag("Cantanco's eyesight had been weak, but adequate.")
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_52_0.py", line 74, in get_pos_tag
+    tokens = word_tokenize(clean_sentence)
+  File "D:\Master-Ly\ClassEval\venv\lib\site-packages\nltk\tokenize\__init__.py", line 142, in word_tokenize
+    sentences = [text] if preserve_line else sent_tokenize(text, language)
+  File "D:\Master-Ly\ClassEval\venv\lib\site-packages\nltk\tokenize\__init__.py", line 119, in sent_tokenize
+    tokenizer = _get_punkt_tokenizer(language)
+  File "D:\Master-Ly\ClassEval\venv\lib\site-packages\nltk\tokenize\__init__.py", line 105, in _get_punkt_tokenizer
+    return PunktTokenizer(language)
+  File "D:\Master-Ly\ClassEval\venv\lib\site-packages\nltk\tokenize\punkt.py", line 1795, in __init__
+    self.load_lang(lang)
+  File "D:\Master-Ly\ClassEval\venv\lib\site-packages\nltk\tokenize\punkt.py", line 1800, in load_lang
+    lang_dir = find(f"tokenizers/punkt_tab/{lang}/")
+  File "D:\Master-Ly\ClassEval\venv\lib\site-packages\nltk\data.py", line 877, in find
+    raise LookupError(resource_not_found)
+LookupError: 
+**********************************************************************
+  Resource 'punkt_tab' not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  >>> import nltk
+  >>> nltk.download('punkt_tab')
+
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load 'tokenizers/punkt_tab/english/'
+
+  Searched in:
+    - 'C:\\Users\\Nguye/nltk_data'
+    - 'D:\\Master-Ly\\ClassEval\\venv\\nltk_data'
+    - 'D:\\Master-Ly\\ClassEval\\venv\\share\\nltk_data'
+    - 'D:\\Master-Ly\\ClassEval\\venv\\lib\\nltk_data'
+    - 'C:\\Users\\Nguye\\AppData\\Roaming\\nltk_data'
+    - 'C:\\nltk_data'
+    - 'D:\\nltk_data'
+    - 'E:\\nltk_data'
+**********************************************************************
+
+
+======================================================================
+ERROR: test_get_pos_tag_3 (ClassEval_52_0.LemmatizationTestGetPosTag)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_52_0.py", line 138, in test_get_pos_tag_3
+    result = lemmatization.get_pos_tag("The dog's barked at the mailman.")
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_52_0.py", line 74, in get_pos_tag
+    tokens = word_tokenize(clean_sentence)
+  File "D:\Master-Ly\ClassEval\venv\lib\site-packages\nltk\tokenize\__init__.py", line 142, in word_tokenize
+    sentences = [text] if preserve_line else sent_tokenize(text, language)
+  File "D:\Master-Ly\ClassEval\venv\lib\site-packages\nltk\tokenize\__init__.py", line 119, in sent_tokenize
+    tokenizer = _get_punkt_tokenizer(language)
+  File "D:\Master-Ly\ClassEval\venv\lib\site-packages\nltk\tokenize\__init__.py", line 105, in _get_punkt_tokenizer
+    return PunktTokenizer(language)
+  File "D:\Master-Ly\ClassEval\venv\lib\site-packages\nltk\tokenize\punkt.py", line 1795, in __init__
+    self.load_lang(lang)
+  File "D:\Master-Ly\ClassEval\venv\lib\site-packages\nltk\tokenize\punkt.py", line 1800, in load_lang
+    lang_dir = find(f"tokenizers/punkt_tab/{lang}/")
+  File "D:\Master-Ly\ClassEval\venv\lib\site-packages\nltk\data.py", line 877, in find
+    raise LookupError(resource_not_found)
+LookupError: 
+**********************************************************************
+  Resource 'punkt_tab' not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  >>> import nltk
+  >>> nltk.download('punkt_tab')
+
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load 'tokenizers/punkt_tab/english/'
+
+  Searched in:
+    - 'C:\\Users\\Nguye/nltk_data'
+    - 'D:\\Master-Ly\\ClassEval\\venv\\nltk_data'
+    - 'D:\\Master-Ly\\ClassEval\\venv\\share\\nltk_data'
+    - 'D:\\Master-Ly\\ClassEval\\venv\\lib\\nltk_data'
+    - 'C:\\Users\\Nguye\\AppData\\Roaming\\nltk_data'
+    - 'C:\\nltk_data'
+    - 'D:\\nltk_data'
+    - 'E:\\nltk_data'
+**********************************************************************
+
+
+======================================================================
+ERROR: test_get_pos_tag_4 (ClassEval_52_0.LemmatizationTestGetPosTag)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_52_0.py", line 144, in test_get_pos_tag_4
+    result = lemmatization.get_pos_tag("He was running and eating at same time. ")
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_52_0.py", line 74, in get_pos_tag
+    tokens = word_tokenize(clean_sentence)
+  File "D:\Master-Ly\ClassEval\venv\lib\site-packages\nltk\tokenize\__init__.py", line 142, in word_tokenize
+    sentences = [text] if preserve_line else sent_tokenize(text, language)
+  File "D:\Master-Ly\ClassEval\venv\lib\site-packages\nltk\tokenize\__init__.py", line 119, in sent_tokenize
+    tokenizer = _get_punkt_tokenizer(language)
+  File "D:\Master-Ly\ClassEval\venv\lib\site-packages\nltk\tokenize\__init__.py", line 105, in _get_punkt_tokenizer
+    return PunktTokenizer(language)
+  File "D:\Master-Ly\ClassEval\venv\lib\site-packages\nltk\tokenize\punkt.py", line 1795, in __init__
+    self.load_lang(lang)
+  File "D:\Master-Ly\ClassEval\venv\lib\site-packages\nltk\tokenize\punkt.py", line 1800, in load_lang
+    lang_dir = find(f"tokenizers/punkt_tab/{lang}/")
+  File "D:\Master-Ly\ClassEval\venv\lib\site-packages\nltk\data.py", line 877, in find
+    raise LookupError(resource_not_found)
+LookupError: 
+**********************************************************************
+  Resource 'punkt_tab' not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  >>> import nltk
+  >>> nltk.download('punkt_tab')
+
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load 'tokenizers/punkt_tab/english/'
+
+  Searched in:
+    - 'C:\\Users\\Nguye/nltk_data'
+    - 'D:\\Master-Ly\\ClassEval\\venv\\nltk_data'
+    - 'D:\\Master-Ly\\ClassEval\\venv\\share\\nltk_data'
+    - 'D:\\Master-Ly\\ClassEval\\venv\\lib\\nltk_data'
+    - 'C:\\Users\\Nguye\\AppData\\Roaming\\nltk_data'
+    - 'C:\\nltk_data'
+    - 'D:\\nltk_data'
+    - 'E:\\nltk_data'
+**********************************************************************
+
+
+======================================================================
+ERROR: test_get_pos_tag_5 (ClassEval_52_0.LemmatizationTestGetPosTag)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_52_0.py", line 150, in test_get_pos_tag_5
+    result = lemmatization.get_pos_tag("I was taking a ride in the car.")
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_52_0.py", line 74, in get_pos_tag
+    tokens = word_tokenize(clean_sentence)
+  File "D:\Master-Ly\ClassEval\venv\lib\site-packages\nltk\tokenize\__init__.py", line 142, in word_tokenize
+    sentences = [text] if preserve_line else sent_tokenize(text, language)
+  File "D:\Master-Ly\ClassEval\venv\lib\site-packages\nltk\tokenize\__init__.py", line 119, in sent_tokenize
+    tokenizer = _get_punkt_tokenizer(language)
+  File "D:\Master-Ly\ClassEval\venv\lib\site-packages\nltk\tokenize\__init__.py", line 105, in _get_punkt_tokenizer
+    return PunktTokenizer(language)
+  File "D:\Master-Ly\ClassEval\venv\lib\site-packages\nltk\tokenize\punkt.py", line 1795, in __init__
+    self.load_lang(lang)
+  File "D:\Master-Ly\ClassEval\venv\lib\site-packages\nltk\tokenize\punkt.py", line 1800, in load_lang
+    lang_dir = find(f"tokenizers/punkt_tab/{lang}/")
+  File "D:\Master-Ly\ClassEval\venv\lib\site-packages\nltk\data.py", line 877, in find
+    raise LookupError(resource_not_found)
+LookupError: 
+**********************************************************************
+  Resource 'punkt_tab' not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  >>> import nltk
+  >>> nltk.download('punkt_tab')
+
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load 'tokenizers/punkt_tab/english/'
+
+  Searched in:
+    - 'C:\\Users\\Nguye/nltk_data'
+    - 'D:\\Master-Ly\\ClassEval\\venv\\nltk_data'
+    - 'D:\\Master-Ly\\ClassEval\\venv\\share\\nltk_data'
+    - 'D:\\Master-Ly\\ClassEval\\venv\\lib\\nltk_data'
+    - 'C:\\Users\\Nguye\\AppData\\Roaming\\nltk_data'
+    - 'C:\\nltk_data'
+    - 'D:\\nltk_data'
+    - 'E:\\nltk_data'
+**********************************************************************
+
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.142s
+
+FAILED (errors=5)
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+OK
+E
+======================================================================
+ERROR: test_main (ClassEval_52_0.LemmatizationTestMain)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_52_0.py", line 189, in test_main
+    result = lemmatization.lemmatize_sentence("Until the beating, Cantanco's eyesight had been weak, but adequate.")
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_52_0.py", line 39, in lemmatize_sentence
+    tokens = word_tokenize(clean_sentence)
+  File "D:\Master-Ly\ClassEval\venv\lib\site-packages\nltk\tokenize\__init__.py", line 142, in word_tokenize
+    sentences = [text] if preserve_line else sent_tokenize(text, language)
+  File "D:\Master-Ly\ClassEval\venv\lib\site-packages\nltk\tokenize\__init__.py", line 119, in sent_tokenize
+    tokenizer = _get_punkt_tokenizer(language)
+  File "D:\Master-Ly\ClassEval\venv\lib\site-packages\nltk\tokenize\__init__.py", line 105, in _get_punkt_tokenizer
+    return PunktTokenizer(language)
+  File "D:\Master-Ly\ClassEval\venv\lib\site-packages\nltk\tokenize\punkt.py", line 1795, in __init__
+    self.load_lang(lang)
+  File "D:\Master-Ly\ClassEval\venv\lib\site-packages\nltk\tokenize\punkt.py", line 1800, in load_lang
+    lang_dir = find(f"tokenizers/punkt_tab/{lang}/")
+  File "D:\Master-Ly\ClassEval\venv\lib\site-packages\nltk\data.py", line 877, in find
+    raise LookupError(resource_not_found)
+LookupError: 
+**********************************************************************
+  Resource 'punkt_tab' not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  >>> import nltk
+  >>> nltk.download('punkt_tab')
+
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load 'tokenizers/punkt_tab/english/'
+
+  Searched in:
+    - 'C:\\Users\\Nguye/nltk_data'
+    - 'D:\\Master-Ly\\ClassEval\\venv\\nltk_data'
+    - 'D:\\Master-Ly\\ClassEval\\venv\\share\\nltk_data'
+    - 'D:\\Master-Ly\\ClassEval\\venv\\lib\\nltk_data'
+    - 'C:\\Users\\Nguye\\AppData\\Roaming\\nltk_data'
+    - 'C:\\nltk_data'
+    - 'D:\\nltk_data'
+    - 'E:\\nltk_data'
+**********************************************************************
+
+
+----------------------------------------------------------------------
+Ran 1 test in 0.010s
+
+FAILED (errors=1)
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+OK
+...FF
+======================================================================
+FAIL: test_find_longest_word_4 (ClassEval_53_0.LongestWordTestFindLongestWord)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_53_0.py", line 115, in test_find_longest_word_4
+    self.assertEqual('apple', longestWord.find_longest_word(sentence))
+AssertionError: 'apple' != ''
+- apple
++ 
+
+
+======================================================================
+FAIL: test_find_longest_word_5 (ClassEval_53_0.LongestWordTestFindLongestWord)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_53_0.py", line 122, in test_find_longest_word_5
+    self.assertEqual('apple', longestWord.find_longest_word(sentence))
+AssertionError: 'apple' != 'red'
+- apple
++ red
+
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.003s
+
+FAILED (failures=2)
+EEEEE
+======================================================================
+ERROR: test_create_board_1 (ClassEval_54_0.MahjongConnectTestCreateBoard)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_54_0.py", line 8, in test_create_board_1
+    mc = MahjongConnect([4, 4], ['a', 'b', 'c'])
+NameError: name 'MahjongConnect' is not defined
+
+======================================================================
+ERROR: test_create_board_2 (ClassEval_54_0.MahjongConnectTestCreateBoard)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_54_0.py", line 16, in test_create_board_2
+    mc = MahjongConnect([2, 2], ['a', 'b', 'c'])
+NameError: name 'MahjongConnect' is not defined
+
+======================================================================
+ERROR: test_create_board_3 (ClassEval_54_0.MahjongConnectTestCreateBoard)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_54_0.py", line 24, in test_create_board_3
+    mc = MahjongConnect([3, 3], ['a', 'b', 'c'])
+NameError: name 'MahjongConnect' is not defined
+
+======================================================================
+ERROR: test_create_board_4 (ClassEval_54_0.MahjongConnectTestCreateBoard)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_54_0.py", line 32, in test_create_board_4
+    mc = MahjongConnect([1, 1], ['a', 'b', 'c'])
+NameError: name 'MahjongConnect' is not defined
+
+======================================================================
+ERROR: test_create_board_5 (ClassEval_54_0.MahjongConnectTestCreateBoard)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_54_0.py", line 40, in test_create_board_5
+    mc = MahjongConnect([5, 5], ['a', 'b', 'c'])
+NameError: name 'MahjongConnect' is not defined
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.006s
+
+FAILED (errors=5)
+EEEEEE
+======================================================================
+ERROR: test_is_valid_move_1 (ClassEval_54_0.MahjongConnectTestIsValidMove)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_54_0.py", line 50, in test_is_valid_move_1
+    mc = MahjongConnect([4, 4], ['a', 'b', 'c'])
+NameError: name 'MahjongConnect' is not defined
+
+======================================================================
+ERROR: test_is_valid_move_2 (ClassEval_54_0.MahjongConnectTestIsValidMove)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_54_0.py", line 59, in test_is_valid_move_2
+    mc = MahjongConnect([4, 4], ['a', 'b', 'c'])
+NameError: name 'MahjongConnect' is not defined
+
+======================================================================
+ERROR: test_is_valid_move_3 (ClassEval_54_0.MahjongConnectTestIsValidMove)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_54_0.py", line 68, in test_is_valid_move_3
+    mc = MahjongConnect([4, 4], ['a', 'b', 'c'])
+NameError: name 'MahjongConnect' is not defined
+
+======================================================================
+ERROR: test_is_valid_move_4 (ClassEval_54_0.MahjongConnectTestIsValidMove)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_54_0.py", line 77, in test_is_valid_move_4
+    mc = MahjongConnect([4, 4], ['a', 'b', 'c'])
+NameError: name 'MahjongConnect' is not defined
+
+======================================================================
+ERROR: test_is_valid_move_5 (ClassEval_54_0.MahjongConnectTestIsValidMove)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_54_0.py", line 86, in test_is_valid_move_5
+    mc = MahjongConnect([4, 4], ['a', 'b', 'c'])
+NameError: name 'MahjongConnect' is not defined
+
+======================================================================
+ERROR: test_is_valid_move_6 (ClassEval_54_0.MahjongConnectTestIsValidMove)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_54_0.py", line 95, in test_is_valid_move_6
+    mc = MahjongConnect([4, 4], ['a', 'b', 'c'])
+NameError: name 'MahjongConnect' is not defined
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.003s
+
+FAILED (errors=6)
+EEEEEE
+======================================================================
+ERROR: test_has_path_1 (ClassEval_54_0.MahjongConnectTestHasPath)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_54_0.py", line 106, in test_has_path_1
+    mc = MahjongConnect([4, 4], ['a', 'b', 'c'])
+NameError: name 'MahjongConnect' is not defined
+
+======================================================================
+ERROR: test_has_path_2 (ClassEval_54_0.MahjongConnectTestHasPath)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_54_0.py", line 115, in test_has_path_2
+    mc = MahjongConnect([4, 4], ['a', 'b', 'c'])
+NameError: name 'MahjongConnect' is not defined
+
+======================================================================
+ERROR: test_has_path_3 (ClassEval_54_0.MahjongConnectTestHasPath)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_54_0.py", line 124, in test_has_path_3
+    mc = MahjongConnect([4, 4], ['a', 'b', 'c'])
+NameError: name 'MahjongConnect' is not defined
+
+======================================================================
+ERROR: test_has_path_4 (ClassEval_54_0.MahjongConnectTestHasPath)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_54_0.py", line 133, in test_has_path_4
+    mc = MahjongConnect([4, 4], ['a', 'b', 'c'])
+NameError: name 'MahjongConnect' is not defined
+
+======================================================================
+ERROR: test_has_path_5 (ClassEval_54_0.MahjongConnectTestHasPath)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_54_0.py", line 142, in test_has_path_5
+    mc = MahjongConnect([4, 4], ['a', 'b', 'c'])
+NameError: name 'MahjongConnect' is not defined
+
+======================================================================
+ERROR: test_has_path_6 (ClassEval_54_0.MahjongConnectTestHasPath)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_54_0.py", line 151, in test_has_path_6
+    mc = MahjongConnect([4, 4], ['a', 'b', 'c'])
+NameError: name 'MahjongConnect' is not defined
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.004s
+
+FAILED (errors=6)
+EEEEE
+======================================================================
+ERROR: test_remove_icons_1 (ClassEval_54_0.MahjongConnectTestRemoveIcons)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_54_0.py", line 162, in test_remove_icons_1
+    mc = MahjongConnect([4, 4], ['a', 'b', 'c'])
+NameError: name 'MahjongConnect' is not defined
+
+======================================================================
+ERROR: test_remove_icons_2 (ClassEval_54_0.MahjongConnectTestRemoveIcons)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_54_0.py", line 174, in test_remove_icons_2
+    mc = MahjongConnect([4, 4], ['a', 'b', 'c'])
+NameError: name 'MahjongConnect' is not defined
+
+======================================================================
+ERROR: test_remove_icons_3 (ClassEval_54_0.MahjongConnectTestRemoveIcons)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_54_0.py", line 186, in test_remove_icons_3
+    mc = MahjongConnect([4, 4], ['a', 'b', 'c'])
+NameError: name 'MahjongConnect' is not defined
+
+======================================================================
+ERROR: test_remove_icons_4 (ClassEval_54_0.MahjongConnectTestRemoveIcons)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_54_0.py", line 198, in test_remove_icons_4
+    mc = MahjongConnect([4, 4], ['a', 'b', 'c'])
+NameError: name 'MahjongConnect' is not defined
+
+======================================================================
+ERROR: test_remove_icons_5 (ClassEval_54_0.MahjongConnectTestRemoveIcons)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_54_0.py", line 210, in test_remove_icons_5
+    mc = MahjongConnect([4, 4], ['a', 'b', 'c'])
+NameError: name 'MahjongConnect' is not defined
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.002s
+
+FAILED (errors=5)
+EEEEE
+======================================================================
+ERROR: test_is_game_over_1 (ClassEval_54_0.MahjongConnectTestIsGameOver)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_54_0.py", line 224, in test_is_game_over_1
+    mc = MahjongConnect([4, 4], ['a', 'b', 'c'])
+NameError: name 'MahjongConnect' is not defined
+
+======================================================================
+ERROR: test_is_game_over_2 (ClassEval_54_0.MahjongConnectTestIsGameOver)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_54_0.py", line 233, in test_is_game_over_2
+    mc = MahjongConnect([4, 4], ['a', 'b', 'c'])
+NameError: name 'MahjongConnect' is not defined
+
+======================================================================
+ERROR: test_is_game_over_3 (ClassEval_54_0.MahjongConnectTestIsGameOver)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_54_0.py", line 242, in test_is_game_over_3
+    mc = MahjongConnect([4, 4], ['a', 'b', 'c'])
+NameError: name 'MahjongConnect' is not defined
+
+======================================================================
+ERROR: test_is_game_over_4 (ClassEval_54_0.MahjongConnectTestIsGameOver)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_54_0.py", line 251, in test_is_game_over_4
+    mc = MahjongConnect([4, 4], ['a', 'b', 'c'])
+NameError: name 'MahjongConnect' is not defined
+
+======================================================================
+ERROR: test_is_game_over_5 (ClassEval_54_0.MahjongConnectTestIsGameOver)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_54_0.py", line 260, in test_is_game_over_5
+    mc = MahjongConnect([4, 4], ['a', 'b', 'c'])
+NameError: name 'MahjongConnect' is not defined
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.002s
+
+FAILED (errors=5)
+E
+======================================================================
+ERROR: test_mahjongconnect (ClassEval_54_0.MahjongConnectTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_54_0.py", line 271, in test_mahjongconnect
+    mc = MahjongConnect([4, 4], ['a', 'b', 'c'])
+NameError: name 'MahjongConnect' is not defined
+
+----------------------------------------------------------------------
+Ran 1 test in 0.001s
+
+FAILED (errors=1)
+EEEEE
+======================================================================
+ERROR: test_palindromic_length (ClassEval_55_0.ManacherTestPalindromicLength)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_55_0.py", line 7, in test_palindromic_length
+    manacher = Manacher('ababa')
+NameError: name 'Manacher' is not defined
+
+======================================================================
+ERROR: test_palindromic_length_2 (ClassEval_55_0.ManacherTestPalindromicLength)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_55_0.py", line 10, in test_palindromic_length_2
+    manacher = Manacher('ababaxse')
+NameError: name 'Manacher' is not defined
+
+======================================================================
+ERROR: test_palindromic_length_3 (ClassEval_55_0.ManacherTestPalindromicLength)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_55_0.py", line 14, in test_palindromic_length_3
+    manacher = Manacher('ababax')
+NameError: name 'Manacher' is not defined
+
+======================================================================
+ERROR: test_palindromic_length_4 (ClassEval_55_0.ManacherTestPalindromicLength)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_55_0.py", line 18, in test_palindromic_length_4
+    manacher = Manacher('ababax')
+NameError: name 'Manacher' is not defined
+
+======================================================================
+ERROR: test_palindromic_length_5 (ClassEval_55_0.ManacherTestPalindromicLength)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_55_0.py", line 22, in test_palindromic_length_5
+    manacher = Manacher('ababax')
+NameError: name 'Manacher' is not defined
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.004s
+
+FAILED (errors=5)
+EEEEE
+======================================================================
+ERROR: test_palindromic_string (ClassEval_55_0.ManacherTestPalindromicString)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_55_0.py", line 28, in test_palindromic_string
+    manacher = Manacher('ababaxse')
+NameError: name 'Manacher' is not defined
+
+======================================================================
+ERROR: test_palindromic_string_2 (ClassEval_55_0.ManacherTestPalindromicString)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_55_0.py", line 32, in test_palindromic_string_2
+    manacher = Manacher('ababax')
+NameError: name 'Manacher' is not defined
+
+======================================================================
+ERROR: test_palindromic_string_3 (ClassEval_55_0.ManacherTestPalindromicString)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_55_0.py", line 36, in test_palindromic_string_3
+    manacher = Manacher('ababax')
+NameError: name 'Manacher' is not defined
+
+======================================================================
+ERROR: test_palindromic_string_4 (ClassEval_55_0.ManacherTestPalindromicString)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_55_0.py", line 40, in test_palindromic_string_4
+    manacher = Manacher('ababaxssss')
+NameError: name 'Manacher' is not defined
+
+======================================================================
+ERROR: test_palindromic_string_5 (ClassEval_55_0.ManacherTestPalindromicString)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_55_0.py", line 44, in test_palindromic_string_5
+    manacher = Manacher('abab')
+NameError: name 'Manacher' is not defined
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.002s
+
+FAILED (errors=5)
+E
+======================================================================
+ERROR: test_main (ClassEval_55_0.ManacherTestMain)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_55_0.py", line 50, in test_main
+    manacher = Manacher('ababa')
+NameError: name 'Manacher' is not defined
+
+----------------------------------------------------------------------
+Ran 1 test in 0.001s
+
+FAILED (errors=1)
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+OK
+......
+----------------------------------------------------------------------
+Ran 6 tests in 0.001s
+
+OK
+......
+----------------------------------------------------------------------
+Ran 6 tests in 0.001s
+
+OK
+......
+----------------------------------------------------------------------
+Ran 6 tests in 0.001s
+
+OK
+......
+----------------------------------------------------------------------
+Ran 6 tests in 0.001s
+
+OK
+.
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+OK
+......FF
+======================================================================
+FAIL: test_mrr_7 (ClassEval_57_0.MetricsCalculator2TestMrr)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_57_0.py", line 124, in test_mrr_7
+    self.assertEqual(res2, [0.0])
+AssertionError: Lists differ: [] != [0.0]
+
+Second list contains 1 additional elements.
+First extra element 0:
+0.0
+
+- []
++ [0.0]
+
+======================================================================
+FAIL: test_mrr_8 (ClassEval_57_0.MetricsCalculator2TestMrr)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_57_0.py", line 128, in test_mrr_8
+    self.assertEqual(res1, 0.0)
+AssertionError: 0.75 != 0.0
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.002s
+
+FAILED (failures=2)
+......F.
+======================================================================
+FAIL: test_map_7 (ClassEval_57_0.MetricsCalculator2TestMap)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_57_0.py", line 167, in test_map_7
+    self.assertEqual(res2, [0.0])
+AssertionError: Lists differ: [] != [0.0]
+
+Second list contains 1 additional elements.
+First extra element 0:
+0.0
+
+- []
++ [0.0]
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.002s
+
+FAILED (failures=1)
+....
+----------------------------------------------------------------------
+Ran 4 tests in 0.001s
+
+OK
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.002s
+
+OK
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+OK
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+OK
+F.FFF
+======================================================================
+FAIL: test_sweep (ClassEval_58_0.MinesweeperGameTestSweep)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_58_0.py", line 239, in test_sweep
+    self.assertEqual(minesweeper_game.score, 1)
+AssertionError: 0 != 1
+
+======================================================================
+FAIL: test_sweep_3 (ClassEval_58_0.MinesweeperGameTestSweep)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_58_0.py", line 253, in test_sweep_3
+    self.assertEqual(minesweeper_game.score, 1)
+AssertionError: 0 != 1
+
+======================================================================
+FAIL: test_sweep_4 (ClassEval_58_0.MinesweeperGameTestSweep)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_58_0.py", line 259, in test_sweep_4
+    self.assertEqual(minesweeper_game.sweep(0,2), [['-', '-', 0], ['-', '-', '0'], ['0', '0', '0']])
+AssertionError: Lists differ: [['-', 1, 0], ['-', 1, '0'], ['0', '0', '0']] != [['-', '-', 0], ['-', '-', '0'], ['0', '0', '0']]
+
+First differing element 0:
+['-', 1, 0]
+['-', '-', 0]
+
+- [['-', 1, 0], ['-', 1, '0'], ['0', '0', '0']]
+?        ^            ^
+
++ [['-', '-', 0], ['-', '-', '0'], ['0', '0', '0']]
+?        ^^^            ^^^
+
+
+======================================================================
+FAIL: test_sweep_5 (ClassEval_58_0.MinesweeperGameTestSweep)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_58_0.py", line 267, in test_sweep_5
+    self.assertEqual(minesweeper_game.score, 1)
+AssertionError: 0 != 1
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.004s
+
+FAILED (failures=4)
+FF
+======================================================================
+FAIL: test_minesweeper_main (ClassEval_58_0.MinesweeperGameTestMain)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_58_0.py", line 285, in test_minesweeper_main
+    self.assertEqual(minesweeper_game.score, 1)
+AssertionError: 0 != 1
+
+======================================================================
+FAIL: test_minesweeper_main_2 (ClassEval_58_0.MinesweeperGameTestMain)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_58_0.py", line 301, in test_minesweeper_main_2
+    self.assertEqual(minesweeper_game.score, 1)
+AssertionError: 0 != 1
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.002s
+
+FAILED (failures=2)
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.002s
+
+OK
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+OK
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.002s
+
+OK
+.
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+OK
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.127s
+
+OK
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.163s
+
+OK
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.214s
+
+OK
+.
+----------------------------------------------------------------------
+Ran 1 test in 0.057s
+
+OK
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+OK
+......
+----------------------------------------------------------------------
+Ran 6 tests in 0.001s
+
+OK
+.F.F.
+======================================================================
+FAIL: test_play_2 (ClassEval_61_0.MusicPlayerTestPlay)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_61_0.py", line 239, in test_play_2
+    self.assertEqual(musicPlayer.play(), None)
+AssertionError: False != None
+
+======================================================================
+FAIL: test_play_4 (ClassEval_61_0.MusicPlayerTestPlay)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_61_0.py", line 250, in test_play_4
+    self.assertEqual(musicPlayer.play(), "song1")
+AssertionError: False != 'song1'
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.004s
+
+FAILED (failures=2)
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.000s
+
+OK
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.000s
+
+OK
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.000s
+
+OK
+FFF..
+======================================================================
+FAIL: test_set_volume (ClassEval_61_0.MusicPlayerTestSetVolume)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_61_0.py", line 349, in test_set_volume
+    self.assertEqual(musicPlayer.set_volume(50), None)
+AssertionError: True != None
+
+======================================================================
+FAIL: test_set_volume2 (ClassEval_61_0.MusicPlayerTestSetVolume)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_61_0.py", line 354, in test_set_volume2
+    self.assertEqual(musicPlayer.set_volume(100), None)
+AssertionError: True != None
+
+======================================================================
+FAIL: test_set_volume3 (ClassEval_61_0.MusicPlayerTestSetVolume)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_61_0.py", line 359, in test_set_volume3
+    self.assertEqual(musicPlayer.set_volume(0), None)
+AssertionError: True != None
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.003s
+
+FAILED (failures=3)
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.003s
+
+OK
+.
+----------------------------------------------------------------------
+Ran 1 test in 0.002s
+
+OK
+.
+----------------------------------------------------------------------
+Ran 1 test in 0.001s
+
+OK
+....F
+======================================================================
+FAIL: test_remove_stop_words_5 (ClassEval_62_0.NLPDataProcessorTestRemove)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_62_0.py", line 91, in test_remove_stop_words_5
+    self.assertEqual(words_list, expected_words_list)
+AssertionError: Lists differ: [['test'], ['apple'], ['dog']] != [['is', 'test'], ['is', 'apple'], ['is', 'dog']]
+
+First differing element 0:
+['test']
+['is', 'test']
+
+- [['test'], ['apple'], ['dog']]
++ [['is', 'test'], ['is', 'apple'], ['is', 'dog']]
+?   ++++++          ++++++           ++++++
+
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.002s
+
+FAILED (failures=1)
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+OK
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+OK
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+OK
+......
+----------------------------------------------------------------------
+Ran 6 tests in 0.001s
+
+OK
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+OK
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.000s
+
+OK
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.000s
+
+OK
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.000s
+
+OK
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+OK
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.000s
+
+OK
+.
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+OK
+.FF....F..F
+======================================================================
+FAIL: test_replace_10 (ClassEval_66_0.NumericEntityUnescaperTestReplace)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_66_0.py", line 132, in test_replace_10
+    self.assertEqual(res, "")
+AssertionError: '&#X' != ''
+- &#X
++ 
+
+
+======================================================================
+FAIL: test_replace_11 (ClassEval_66_0.NumericEntityUnescaperTestReplace)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_66_0.py", line 137, in test_replace_11
+    self.assertEqual(res, "")
+AssertionError: '&#c1d;BC' != ''
+- &#c1d;BC
++ 
+
+
+======================================================================
+FAIL: test_replace_6 (ClassEval_66_0.NumericEntityUnescaperTestReplace)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_66_0.py", line 112, in test_replace_6
+    self.assertEqual(res, "")
+AssertionError: '&#' != ''
+- &#
++ 
+
+
+======================================================================
+FAIL: test_replace_9 (ClassEval_66_0.NumericEntityUnescaperTestReplace)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_66_0.py", line 127, in test_replace_9
+    self.assertEqual(res, "CCC")
+AssertionError: 'CCC;' != 'CCC'
+- CCC;
+?    -
++ CCC
+
+
+----------------------------------------------------------------------
+Ran 11 tests in 0.004s
+
+FAILED (failures=4)
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.000s
+
+OK
+.
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+OK
+.....F
+======================================================================
+FAIL: test_add_dish_6 (ClassEval_67_0.OrderTestAddDish)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_67_0.py", line 175, in test_add_dish_6
+    self.assertTrue(result)
+AssertionError: False is not true
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.003s
+
+FAILED (failures=1)
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+OK
+F.FFF
+======================================================================
+FAIL: test_checkout_1 (ClassEval_67_0.OrderTestCheckout)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_67_0.py", line 240, in test_checkout_1
+    self.assertEqual([], self.order.selected_dishes)
+AssertionError: Lists differ: [] != [{'dish': 'dish1', 'price': 10, 'count': 2[41 chars]: 2}]
+
+Second list contains 2 additional elements.
+First extra element 0:
+{'dish': 'dish1', 'price': 10, 'count': 2}
+
+- []
++ [{'count': 2, 'dish': 'dish1', 'price': 10},
++  {'count': 2, 'dish': 'dish3', 'price': 20}]
+
+======================================================================
+FAIL: test_checkout_3 (ClassEval_67_0.OrderTestCheckout)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_67_0.py", line 262, in test_checkout_3
+    self.assertEqual([], self.order.selected_dishes)
+AssertionError: Lists differ: [] != [{'dish': 'dish1', 'price': 10, 'count': 1[41 chars]: 1}]
+
+Second list contains 2 additional elements.
+First extra element 0:
+{'dish': 'dish1', 'price': 10, 'count': 1}
+
+- []
++ [{'count': 1, 'dish': 'dish1', 'price': 10},
++  {'count': 1, 'dish': 'dish3', 'price': 20}]
+
+======================================================================
+FAIL: test_checkout_4 (ClassEval_67_0.OrderTestCheckout)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_67_0.py", line 278, in test_checkout_4
+    self.assertEqual([], self.order.selected_dishes)
+AssertionError: Lists differ: [] != [{'dish': 'dish1', 'price': 10, 'count': 3[41 chars]: 3}]
+
+Second list contains 2 additional elements.
+First extra element 0:
+{'dish': 'dish1', 'price': 10, 'count': 3}
+
+- []
++ [{'count': 3, 'dish': 'dish1', 'price': 10},
++  {'count': 3, 'dish': 'dish3', 'price': 20}]
+
+======================================================================
+FAIL: test_checkout_5 (ClassEval_67_0.OrderTestCheckout)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_67_0.py", line 294, in test_checkout_5
+    self.assertEqual([], self.order.selected_dishes)
+AssertionError: Lists differ: [] != [{'dish': 'dish1', 'price': 10, 'count': 5[41 chars]: 5}]
+
+Second list contains 2 additional elements.
+First extra element 0:
+{'dish': 'dish1', 'price': 10, 'count': 5}
+
+- []
++ [{'count': 5, 'dish': 'dish1', 'price': 10},
++  {'count': 5, 'dish': 'dish3', 'price': 20}]
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.005s
+
+FAILED (failures=4)
+F
+======================================================================
+FAIL: test_order (ClassEval_67_0.OrderTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_67_0.py", line 320, in test_order
+    self.assertEqual([], self.order.selected_dishes)
+AssertionError: Lists differ: [] != [{'dish': 'dish1', 'price': 10, 'count': 2[41 chars]: 2}]
+
+Second list contains 2 additional elements.
+First extra element 0:
+{'dish': 'dish1', 'price': 10, 'count': 2}
+
+- []
++ [{'count': 2, 'dish': 'dish1', 'price': 10},
++  {'count': 2, 'dish': 'dish3', 'price': 20}]
+
+----------------------------------------------------------------------
+Ran 1 test in 0.001s
+
+FAILED (failures=1)
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+OK
+....F
+======================================================================
+FAIL: test_get_page_info_5 (ClassEval_68_0.PageUtilTestGetPageInfo)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_68_0.py", line 193, in test_get_page_info_5
+    self.assertEqual(actual_info, empty_info)
+AssertionError: {'current_page': 5, 'per_page': 3, 'total_[77 chars]: []} != {}
++ {}
+- {'current_page': 5,
+-  'data': [],
+-  'has_next': False,
+-  'has_previous': True,
+-  'per_page': 3,
+-  'total_items': 10,
+-  'total_pages': 4}
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.003s
+
+FAILED (failures=1)
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+OK
+.
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+OK
+
+----------------------------------------------------------------------
+Ran 0 tests in 0.000s
+
+OK
+EE
+======================================================================
+ERROR: test_merge_pdfs (ClassEval_69_0.PDFHandlerTestMergePdfs)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_69_0.py", line 116, in test_merge_pdfs
+    handler = PDFHandler(TestPDFHandler.test_files)
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_69_0.py", line 16, in __init__
+    self.readers = [PyPDF2.PdfFileReader(fp) for fp in filepaths]
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_69_0.py", line 16, in <listcomp>
+    self.readers = [PyPDF2.PdfFileReader(fp) for fp in filepaths]
+  File "D:\Master-Ly\ClassEval\venv\lib\site-packages\PyPDF2\_reader.py", line 1974, in __init__
+    deprecation_with_replacement("PdfFileReader", "PdfReader", "3.0.0")
+  File "D:\Master-Ly\ClassEval\venv\lib\site-packages\PyPDF2\_utils.py", line 369, in deprecation_with_replacement
+    deprecation(DEPR_MSG_HAPPENED.format(old_name, removed_in, new_name))
+  File "D:\Master-Ly\ClassEval\venv\lib\site-packages\PyPDF2\_utils.py", line 351, in deprecation
+    raise DeprecationError(msg)
+PyPDF2.errors.DeprecationError: PdfFileReader is deprecated and was removed in PyPDF2 3.0.0. Use PdfReader instead.
+
+======================================================================
+ERROR: test_merge_pdfs (ClassEval_69_0.PDFHandlerTestMergePdfs)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_69_0.py", line 112, in tearDown
+    TestPDFHandler.tearDownClass()
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_69_0.py", line 103, in tearDownClass
+    os.remove("merged.pdf")
+FileNotFoundError: [WinError 2] The system cannot find the file specified: 'merged.pdf'
+
+----------------------------------------------------------------------
+Ran 1 test in 0.089s
+
+FAILED (errors=2)
+E
+======================================================================
+ERROR: test_extract_text_from_pdfs (ClassEval_69_0.PDFHandlerTestExtractTextFromPdfs)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_69_0.py", line 129, in test_extract_text_from_pdfs
+    handler = PDFHandler(TestPDFHandler.test_files)
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_69_0.py", line 16, in __init__
+    self.readers = [PyPDF2.PdfFileReader(fp) for fp in filepaths]
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_69_0.py", line 16, in <listcomp>
+    self.readers = [PyPDF2.PdfFileReader(fp) for fp in filepaths]
+  File "D:\Master-Ly\ClassEval\venv\lib\site-packages\PyPDF2\_reader.py", line 1974, in __init__
+    deprecation_with_replacement("PdfFileReader", "PdfReader", "3.0.0")
+  File "D:\Master-Ly\ClassEval\venv\lib\site-packages\PyPDF2\_utils.py", line 369, in deprecation_with_replacement
+    deprecation(DEPR_MSG_HAPPENED.format(old_name, removed_in, new_name))
+  File "D:\Master-Ly\ClassEval\venv\lib\site-packages\PyPDF2\_utils.py", line 351, in deprecation
+    raise DeprecationError(msg)
+PyPDF2.errors.DeprecationError: PdfFileReader is deprecated and was removed in PyPDF2 3.0.0. Use PdfReader instead.
+
+----------------------------------------------------------------------
+Ran 1 test in 0.014s
+
+FAILED (errors=1)
+EE
+======================================================================
+ERROR: test_main (ClassEval_69_0.PDFHandlerTestMain)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_69_0.py", line 143, in test_main
+    handler = PDFHandler(TestPDFHandler.test_files)
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_69_0.py", line 16, in __init__
+    self.readers = [PyPDF2.PdfFileReader(fp) for fp in filepaths]
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_69_0.py", line 16, in <listcomp>
+    self.readers = [PyPDF2.PdfFileReader(fp) for fp in filepaths]
+  File "D:\Master-Ly\ClassEval\venv\lib\site-packages\PyPDF2\_reader.py", line 1974, in __init__
+    deprecation_with_replacement("PdfFileReader", "PdfReader", "3.0.0")
+  File "D:\Master-Ly\ClassEval\venv\lib\site-packages\PyPDF2\_utils.py", line 369, in deprecation_with_replacement
+    deprecation(DEPR_MSG_HAPPENED.format(old_name, removed_in, new_name))
+  File "D:\Master-Ly\ClassEval\venv\lib\site-packages\PyPDF2\_utils.py", line 351, in deprecation
+    raise DeprecationError(msg)
+PyPDF2.errors.DeprecationError: PdfFileReader is deprecated and was removed in PyPDF2 3.0.0. Use PdfReader instead.
+
+======================================================================
+ERROR: test_main (ClassEval_69_0.PDFHandlerTestMain)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_69_0.py", line 139, in tearDown
+    TestPDFHandler.tearDownClass()
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_69_0.py", line 103, in tearDownClass
+    os.remove("merged.pdf")
+FileNotFoundError: [WinError 2] The system cannot find the file specified: 'merged.pdf'
+
+----------------------------------------------------------------------
+Ran 1 test in 0.016s
+
+FAILED (errors=2)
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+OK
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+OK
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.002s
+
+OK
+.
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+OK
+EEEEEEE
+======================================================================
+ERROR: test_init_game_1 (ClassEval_71_0.PushBoxGameTestInitGame)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_71_0.py", line 15, in setUp
+    self.game = PushBoxGame(self.game_map)
+NameError: name 'PushBoxGame' is not defined
+
+======================================================================
+ERROR: test_init_game_2 (ClassEval_71_0.PushBoxGameTestInitGame)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_71_0.py", line 15, in setUp
+    self.game = PushBoxGame(self.game_map)
+NameError: name 'PushBoxGame' is not defined
+
+======================================================================
+ERROR: test_init_game_3 (ClassEval_71_0.PushBoxGameTestInitGame)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_71_0.py", line 15, in setUp
+    self.game = PushBoxGame(self.game_map)
+NameError: name 'PushBoxGame' is not defined
+
+======================================================================
+ERROR: test_init_game_4 (ClassEval_71_0.PushBoxGameTestInitGame)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_71_0.py", line 15, in setUp
+    self.game = PushBoxGame(self.game_map)
+NameError: name 'PushBoxGame' is not defined
+
+======================================================================
+ERROR: test_init_game_5 (ClassEval_71_0.PushBoxGameTestInitGame)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_71_0.py", line 15, in setUp
+    self.game = PushBoxGame(self.game_map)
+NameError: name 'PushBoxGame' is not defined
+
+======================================================================
+ERROR: test_init_game_6 (ClassEval_71_0.PushBoxGameTestInitGame)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_71_0.py", line 15, in setUp
+    self.game = PushBoxGame(self.game_map)
+NameError: name 'PushBoxGame' is not defined
+
+======================================================================
+ERROR: test_init_game_7 (ClassEval_71_0.PushBoxGameTestInitGame)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_71_0.py", line 15, in setUp
+    self.game = PushBoxGame(self.game_map)
+NameError: name 'PushBoxGame' is not defined
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.004s
+
+FAILED (errors=7)
+EE
+======================================================================
+ERROR: test_check_win_1 (ClassEval_71_0.PushBoxGameTestCheckWin)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_71_0.py", line 48, in setUp
+    self.game = PushBoxGame(self.game_map)
+NameError: name 'PushBoxGame' is not defined
+
+======================================================================
+ERROR: test_check_win_2 (ClassEval_71_0.PushBoxGameTestCheckWin)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_71_0.py", line 48, in setUp
+    self.game = PushBoxGame(self.game_map)
+NameError: name 'PushBoxGame' is not defined
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.001s
+
+FAILED (errors=2)
+EEEEEEE
+======================================================================
+ERROR: test_move_1 (ClassEval_71_0.PushBoxGameTestMove)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_71_0.py", line 68, in setUp
+    self.game = PushBoxGame(self.game_map)
+NameError: name 'PushBoxGame' is not defined
+
+======================================================================
+ERROR: test_move_2 (ClassEval_71_0.PushBoxGameTestMove)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_71_0.py", line 68, in setUp
+    self.game = PushBoxGame(self.game_map)
+NameError: name 'PushBoxGame' is not defined
+
+======================================================================
+ERROR: test_move_3 (ClassEval_71_0.PushBoxGameTestMove)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_71_0.py", line 68, in setUp
+    self.game = PushBoxGame(self.game_map)
+NameError: name 'PushBoxGame' is not defined
+
+======================================================================
+ERROR: test_move_4 (ClassEval_71_0.PushBoxGameTestMove)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_71_0.py", line 68, in setUp
+    self.game = PushBoxGame(self.game_map)
+NameError: name 'PushBoxGame' is not defined
+
+======================================================================
+ERROR: test_move_5 (ClassEval_71_0.PushBoxGameTestMove)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_71_0.py", line 68, in setUp
+    self.game = PushBoxGame(self.game_map)
+NameError: name 'PushBoxGame' is not defined
+
+======================================================================
+ERROR: test_move_6 (ClassEval_71_0.PushBoxGameTestMove)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_71_0.py", line 68, in setUp
+    self.game = PushBoxGame(self.game_map)
+NameError: name 'PushBoxGame' is not defined
+
+======================================================================
+ERROR: test_move_7 (ClassEval_71_0.PushBoxGameTestMove)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_71_0.py", line 68, in setUp
+    self.game = PushBoxGame(self.game_map)
+NameError: name 'PushBoxGame' is not defined
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.003s
+
+FAILED (errors=7)
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.002s
+
+OK
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+OK
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+OK
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.000s
+
+OK
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.000s
+
+OK
+.
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+OK
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+OK
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.000s
+
+OK
+..EFF
+======================================================================
+ERROR: test_recv_3 (ClassEval_74_0.ServerTestRecv)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_74_0.py", line 168, in test_recv_3
+    flag = server.recv([88])
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_74_0.py", line 57, in recv
+    addr = info.get("addr")
+AttributeError: 'list' object has no attribute 'get'
+
+======================================================================
+FAIL: test_recv_4 (ClassEval_74_0.ServerTestRecv)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_74_0.py", line 176, in test_recv_4
+    self.assertEqual(flag, -1)
+AssertionError: False != -1
+
+======================================================================
+FAIL: test_recv_5 (ClassEval_74_0.ServerTestRecv)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_74_0.py", line 182, in test_recv_5
+    self.assertEqual(flag, -1)
+AssertionError: False != -1
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.002s
+
+FAILED (failures=2, errors=1)
+.FFF.
+======================================================================
+FAIL: test_send_2 (ClassEval_74_0.ServerTestSend)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_74_0.py", line 194, in test_send_2
+    self.assertEqual(flag, "info structure is not correct")
+AssertionError: 'info structure error' != 'info structure is not correct'
+- info structure error
++ info structure is not correct
+
+
+======================================================================
+FAIL: test_send_3 (ClassEval_74_0.ServerTestSend)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_74_0.py", line 199, in test_send_3
+    self.assertEqual(flag, "info structure is not correct")
+AssertionError: 'info structure error' != 'info structure is not correct'
+- info structure error
++ info structure is not correct
+
+
+======================================================================
+FAIL: test_send_4 (ClassEval_74_0.ServerTestSend)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_74_0.py", line 204, in test_send_4
+    self.assertEqual(flag, "info structure is not correct")
+AssertionError: 'info structure error' != 'info structure is not correct'
+- info structure error
++ info structure is not correct
+
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.007s
+
+FAILED (failures=3)
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+OK
+.
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+OK
+.....F
+======================================================================
+FAIL: test_add_item_6 (ClassEval_75_0.ShoppingCartTestAddItem)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_75_0.py", line 110, in test_add_item_6
+    self.assertEqual(shoppingcart.items, {"apple": {"price": 1, "quantity": 5}})
+AssertionError: {'apple': {'price': 1, 'quantity': 10}} != {'apple': {'price': 1, 'quantity': 5}}
+- {'apple': {'price': 1, 'quantity': 10}}
+?                                    ^^
+
++ {'apple': {'price': 1, 'quantity': 5}}
+?                                    ^
+
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.010s
+
+FAILED (failures=1)
+......
+----------------------------------------------------------------------
+Ran 6 tests in 0.001s
+
+OK
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+OK
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+OK
+.
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+OK
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.000s
+
+OK
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.000s
+
+OK
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.000s
+
+OK
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+OK
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+OK
+.
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+OK
+EEEEE
+======================================================================
+ERROR: test_move_1 (ClassEval_77_0.SnakeTestMove)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_77_0.py", line 8, in test_move_1
+    snake = Snake(100, 100, 1, (51, 51))
+NameError: name 'Snake' is not defined
+
+======================================================================
+ERROR: test_move_2 (ClassEval_77_0.SnakeTestMove)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_77_0.py", line 16, in test_move_2
+    snake = Snake(100, 100, 1, (80, 80))
+NameError: name 'Snake' is not defined
+
+======================================================================
+ERROR: test_move_3 (ClassEval_77_0.SnakeTestMove)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_77_0.py", line 23, in test_move_3
+    snake = Snake(100, 100, 1, (51, 51))
+NameError: name 'Snake' is not defined
+
+======================================================================
+ERROR: test_move_4 (ClassEval_77_0.SnakeTestMove)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_77_0.py", line 30, in test_move_4
+    snake = Snake(100, 100, 1, (51, 51))
+NameError: name 'Snake' is not defined
+
+======================================================================
+ERROR: test_move_5 (ClassEval_77_0.SnakeTestMove)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_77_0.py", line 37, in test_move_5
+    snake = Snake(100, 100, 1, (99, 99))
+NameError: name 'Snake' is not defined
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.003s
+
+FAILED (errors=5)
+EEEEE
+======================================================================
+ERROR: test_random_food_position_1 (ClassEval_77_0.SnakeTestRandomFoodPosition)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_77_0.py", line 46, in test_random_food_position_1
+    snake = Snake(100, 100, 1, (51, 51))
+NameError: name 'Snake' is not defined
+
+======================================================================
+ERROR: test_random_food_position_2 (ClassEval_77_0.SnakeTestRandomFoodPosition)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_77_0.py", line 56, in test_random_food_position_2
+    snake = Snake(100, 100, 1, (99, 99))
+NameError: name 'Snake' is not defined
+
+======================================================================
+ERROR: test_random_food_position_3 (ClassEval_77_0.SnakeTestRandomFoodPosition)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_77_0.py", line 66, in test_random_food_position_3
+    snake = Snake(100, 100, 1, (0, 0))
+NameError: name 'Snake' is not defined
+
+======================================================================
+ERROR: test_random_food_position_4 (ClassEval_77_0.SnakeTestRandomFoodPosition)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_77_0.py", line 76, in test_random_food_position_4
+    snake = Snake(100, 100, 1, (40, 40))
+NameError: name 'Snake' is not defined
+
+======================================================================
+ERROR: test_random_food_position_5 (ClassEval_77_0.SnakeTestRandomFoodPosition)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_77_0.py", line 86, in test_random_food_position_5
+    snake = Snake(100, 100, 1, (60, 60))
+NameError: name 'Snake' is not defined
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.002s
+
+FAILED (errors=5)
+EEEEE
+======================================================================
+ERROR: test_reset_1 (ClassEval_77_0.SnakeTestReset)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_77_0.py", line 98, in test_reset_1
+    snake = Snake(100, 100, 1, (51, 51))
+NameError: name 'Snake' is not defined
+
+======================================================================
+ERROR: test_reset_2 (ClassEval_77_0.SnakeTestReset)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_77_0.py", line 106, in test_reset_2
+    snake = Snake(100, 100, 1, (51, 51))
+NameError: name 'Snake' is not defined
+
+======================================================================
+ERROR: test_reset_3 (ClassEval_77_0.SnakeTestReset)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_77_0.py", line 114, in test_reset_3
+    snake = Snake(100, 100, 1, (51, 51))
+NameError: name 'Snake' is not defined
+
+======================================================================
+ERROR: test_reset_4 (ClassEval_77_0.SnakeTestReset)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_77_0.py", line 122, in test_reset_4
+    snake = Snake(100, 100, 1, (51, 51))
+NameError: name 'Snake' is not defined
+
+======================================================================
+ERROR: test_reset_5 (ClassEval_77_0.SnakeTestReset)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_77_0.py", line 130, in test_reset_5
+    snake = Snake(100, 100, 1, (51, 51))
+NameError: name 'Snake' is not defined
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.005s
+
+FAILED (errors=5)
+EEEEE
+======================================================================
+ERROR: test_eat_food_1 (ClassEval_77_0.SnakeTestEatFood)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_77_0.py", line 140, in test_eat_food_1
+    snake = Snake(100, 100, 1, (51, 51))
+NameError: name 'Snake' is not defined
+
+======================================================================
+ERROR: test_eat_food_2 (ClassEval_77_0.SnakeTestEatFood)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_77_0.py", line 148, in test_eat_food_2
+    snake = Snake(100, 100, 1, (51, 51))
+NameError: name 'Snake' is not defined
+
+======================================================================
+ERROR: test_eat_food_3 (ClassEval_77_0.SnakeTestEatFood)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_77_0.py", line 157, in test_eat_food_3
+    snake = Snake(100, 100, 1, (51, 51))
+NameError: name 'Snake' is not defined
+
+======================================================================
+ERROR: test_eat_food_4 (ClassEval_77_0.SnakeTestEatFood)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_77_0.py", line 167, in test_eat_food_4
+    snake = Snake(100, 100, 1, (51, 51))
+NameError: name 'Snake' is not defined
+
+======================================================================
+ERROR: test_eat_food_5 (ClassEval_77_0.SnakeTestEatFood)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_77_0.py", line 178, in test_eat_food_5
+    snake = Snake(100, 100, 1, (51, 51))
+NameError: name 'Snake' is not defined
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.002s
+
+FAILED (errors=5)
+E
+======================================================================
+ERROR: test_snake (ClassEval_77_0.SnakeTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Master-Ly\ClassEval\classeval_evaluation\ClassEval_77_0.py", line 192, in test_snake
+    snake = Snake(100, 100, 1, (51, 51))
+NameError: name 'Snake' is not defined
+
+----------------------------------------------------------------------
+Ran 1 test in 0.001s
+
+FAILED (errors=1)
