@@ -21,6 +21,12 @@
     label { display: block; color: #52627e; font-size: 12px; font-weight: 650; margin-bottom: 7px; }
     select, input { width: 100%; height: 40px; border: 1px solid #dce4ee; background: #fff; border-radius: 8px; padding: 0 10px; color: #1d2b42; outline-color: #4267d6; }
     .filter-note { grid-column: 1 / -1; color: #6d7d96; font-size: 12px; line-height: 1.5; }
+    .source-guide { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 14px; margin-top: 16px; }
+    .source-guide .card { padding: 16px 20px; font-size: 12px; color: #65748f; line-height: 1.5; }
+    .source-guide strong { display: block; color: #1d2b42; font-size: 14px; margin-bottom: 4px; }
+    .origin { display: inline-block; border-radius: 5px; padding: 3px 7px; font-size: 11px; font-weight: 700; white-space: nowrap; }
+    .origin.old { background: #eef1f6; color: #53617a; }
+    .origin.new { background: #e6f6f4; color: #177c77; }
     .summary { display: grid; grid-template-columns: repeat(3,1fr); gap: 14px; margin: 16px 0; }
     .summary .card { padding: 18px 21px; }
     .summary .name { color: #718099; font-size: 12px; margin-bottom: 7px; }
@@ -55,8 +61,14 @@
     .strategy { display: inline-block; background: #edf2ff; color: #3a5fc0; border-radius: 5px; padding: 3px 6px; font-size: 11px; font-weight: 700; }
     .empty { padding: 30px; text-align: center; color: #8a98ad; }
     .source { color: #7e8ca3; font-size: 12px; margin: 8px 0 25px; overflow-wrap: anywhere; }
+    .report-note { color: #65748f; font-size: 12px; line-height: 1.6; margin: 8px 0 16px; }
+    .report-table th, .report-table td { white-space: nowrap; }
+    .report-table td:nth-child(2) { white-space: normal; min-width: 215px; }
+    .report-table td:nth-child(3) { white-space: normal; min-width: 170px; color: #65748f; }
+    .report-findings { margin: 15px 0 0; padding-left: 19px; color: #52627e; font-size: 12px; line-height: 1.6; }
+    .report-findings li + li { margin-top: 5px; }
     @media(max-width:1000px) { .filters { grid-template-columns: repeat(2,minmax(0,1fr)); } .axis,.chart-row { grid-template-columns: 165px 1fr; } }
-    @media(max-width:650px) { .shell { padding: 14px; } header { display: block; } .back { margin-top: 12px; } .filters,.summary { grid-template-columns: 1fr; } .axis,.chart-row { grid-template-columns: 1fr; gap: 6px; } .axis>span { display: none; } .chart-row { padding: 13px 0; } .panel-head { display: block; } .legend { margin-top: 10px; } }
+    @media(max-width:650px) { .shell { padding: 14px; } header { display: block; } .back { margin-top: 12px; } .filters,.summary,.source-guide { grid-template-columns: 1fr; } .axis,.chart-row { grid-template-columns: 1fr; gap: 6px; } .axis>span { display: none; } .chart-row { padding: 13px 0; } .panel-head { display: block; } .legend { margin-top: 10px; } }
   </style>
 </head>
 <body>
@@ -69,16 +81,23 @@
   <section class="card filters" aria-label="Bộ lọc chỉ số">
     <div><label for="sampling">Chỉ số</label><select id="sampling"><option value="pass_1_greedy">Pass@1 · greedy</option><option value="pass_1">Pass@1 · sampling</option><option value="pass_3">Pass@3 · sampling</option><option value="pass_5">Pass@5 · sampling</option></select></div>
     <div><label for="quality">Cách tính đạt</label><select id="quality"><option value="strict">Đạt tất cả kiểm thử</option><option value="partial">Có kiểm thử đạt một phần</option></select></div>
+    <div><label for="origin">Nhóm kết quả</label><select id="origin"><option value="all">Cũ và mới</option><option value="old">Cũ · bài báo</option><option value="new">Mới · bổ sung</option></select></div>
     <div><label for="scope">Model</label><select id="scope"><option value="benchmark">Các model benchmark</option><option value="local">Chỉ model local</option><option value="all">Gồm các lần chạy thêm</option></select></div>
-    <div><label for="mode">Cách hiển thị</label><select id="mode"><option value="best">Chiến lược tốt nhất / model</option><option value="all">Tất cả chiến lược</option></select></div>
-    <div><label for="strategy">Chiến lược</label><select id="strategy"><option value="all">Tất cả</option><option value="H">H · viết cả lớp</option><option value="I">I · lần lượt</option><option value="C">C · ghép phương thức</option><option value="CoT">Gemini · CoT</option><option value="Few-shot">Gemini · few-shot</option><option value="Plan">Gemini · plan</option><option value="other">Các lần chạy khác</option></select></div>
-    <div><label for="search">Tìm model</label><input id="search" placeholder="Tên model hoặc chiến lược"></div>
+    <div><label for="mode">Cách hiển thị</label><select id="mode"><option value="all">Tất cả lần chạy</option><option value="best">Tốt nhất / model</option></select></div>
+    <div><label for="strategy">Cách sinh</label><select id="strategy"><option value="all">Tất cả</option><option value="H">H · viết cả lớp</option><option value="I">I · lần lượt</option><option value="C">C · ghép phương thức</option></select></div>
+    <div><label for="prompt">Kiểu prompt</label><select id="prompt"><option value="all">Tất cả</option><option value="Baseline">Baseline</option><option value="CoT">CoT</option><option value="Few-shot">Few-shot</option><option value="Plan">Plan-then-code</option></select></div>
+    <div><label for="search">Tìm model</label><input id="search" placeholder="Tên model hoặc kiểu prompt"></div>
     <div><label for="sort">Sắp xếp</label><select id="sort"><option value="class">Lớp: cao đến thấp</option><option value="method">Phương thức: cao đến thấp</option><option value="name">Tên model</option></select></div>
-    <div class="filter-note">Dữ liệu được đọc từ một nguồn duy nhất: <code>output/result/pass_at_k_result.json</code>. Gemini từ ClassEval2 có chỉ số Pass@1 · greedy; file này không có chỉ số Gemini Pass@3/Pass@5. H = holistic, I = incremental, C = compositional.</div>
+    <div class="filter-note">Dữ liệu được đọc từ <code>output/result/pass_at_k_result.json</code>. H/I/C là cách sinh code; Baseline/CoT/Few-shot/Plan-then-code là kiểu prompt. Gemini từ ClassEval2 chỉ có Pass@1 · greedy.</div>
+  </section>
+
+  <section class="source-guide" aria-label="Ý nghĩa nhóm kết quả">
+    <div class="card"><strong>Cũ · kết quả bài báo</strong>Các kết quả benchmark gốc của ClassEval theo cách sinh H, I hoặc C.</div>
+    <div class="card"><strong>Mới · kết quả bổ sung</strong>Các lượt SantaCoder và DeepSeek chạy lại trong source cùng kết quả GPT-3.5, Gemini theo prompt CoT, Few-shot, Plan-then-code. GPT-3.5 và Gemini được đưa vào từ ClassEval2.</div>
   </section>
 
   <div class="summary">
-    <div class="card"><div class="name">Dòng đang hiển thị</div><div id="rowCount" class="value">—</div><div class="detail">Sau khi lọc và chọn chiến lược</div></div>
+    <div class="card"><div class="name">Dòng đang hiển thị</div><div id="rowCount" class="value">—</div><div id="sourceCount" class="detail">Sau khi áp dụng bộ lọc</div></div>
     <div class="card"><div class="name">Cao nhất · mức lớp</div><div id="bestClass" class="value">—</div><div id="bestClassName" class="detail">—</div></div>
     <div class="card"><div class="name">Cao nhất · mức phương thức</div><div id="bestMethod" class="value">—</div><div id="bestMethodName" class="detail">—</div></div>
   </div>
@@ -91,26 +110,66 @@
 
   <section class="card panel">
     <div class="panel-head"><div><h2>Bảng số liệu</h2><div class="sub">Các giá trị hiển thị dưới dạng phần trăm, làm tròn một chữ số thập phân.</div></div></div>
-    <div class="table-wrap"><table><thead><tr><th>Model</th><th>Chiến lược</th><th>Mức lớp</th><th>Mức phương thức</th><th>Chênh lệch</th></tr></thead><tbody id="table"></tbody></table></div>
+    <div class="table-wrap"><table><thead><tr><th>Nhóm</th><th>Model</th><th>Cách sinh</th><th>Kiểu prompt</th><th>Mức lớp</th><th>Mức phương thức</th><th>Chênh lệch</th></tr></thead><tbody id="table"></tbody></table></div>
+  </section>
+
+  <section class="card panel" aria-label="So sánh theo báo cáo">
+    <div class="panel-head"><div><h2>Đối chiếu theo báo cáo</h2><div class="sub">Pass@1 · greedy: kết quả bài báo cũ và các kết quả bổ sung theo prompt mới.</div></div></div>
+    <p class="report-note">Bảng này lấy từ <code>BAO_CAO_CAI_TIEN_VA_SO_SANH_MODEL.md</code> và hiển thị cố định, độc lập với bộ lọc phía trên. “Class” và “Method” là tỉ lệ đạt toàn bộ kiểm thử; “C.partial” và “M.partial” là tỉ lệ đạt một phần. Dấu — nghĩa là báo cáo không có số liệu.</p>
+    <div class="table-wrap"><table class="report-table"><thead><tr><th>Nhóm</th><th>Model / prompt</th><th>Nguồn</th><th>Class</th><th>Method</th><th>C.partial</th><th>M.partial</th><th>Tasks</th></tr></thead><tbody>
+      <tr><td><span class="origin old">Cũ</span></td><td>SantaCoder · H, greedy</td><td>Benchmark cũ đã lưu</td><td>2.0%</td><td>3.0%</td><td>3.0%</td><td>8.0%</td><td>100</td></tr>
+      <tr><td><span class="origin new">Mới</span></td><td>SantaCoder · baseline GPU, H</td><td>Chạy lại trên RTX 3050 Ti</td><td>0.0%</td><td>0.2%</td><td>1.0%</td><td>4.2%</td><td>100</td></tr>
+      <tr><td><span class="origin new">Mới</span></td><td>SantaCoder · CoT</td><td>Chạy lại trên RTX 3050 Ti</td><td>0.0%</td><td>0.0%</td><td>0.0%</td><td>1.4%</td><td>100</td></tr>
+      <tr><td><span class="origin new">Mới</span></td><td>SantaCoder · Few-shot</td><td>Chạy lại trên RTX 3050 Ti</td><td>0.0%</td><td>0.0%</td><td>0.0%</td><td>1.0%</td><td>98</td></tr>
+      <tr><td><span class="origin new">Mới</span></td><td>SantaCoder · Plan-then-code</td><td>Chạy lại trên RTX 3050 Ti</td><td>0.0%</td><td>0.0%</td><td>0.0%</td><td>0.0%</td><td>100</td></tr>
+      <tr><td><span class="origin new">Mới</span></td><td>DeepSeek-Coder-Instruct 1.3B · CoT</td><td>Chạy lại trên RTX 3050 Ti</td><td>17.0%</td><td>45.6%</td><td>27.0%</td><td>67.7%</td><td>100</td></tr>
+      <tr><td><span class="origin new">Mới</span></td><td>DeepSeek-Coder-Instruct 1.3B · Few-shot</td><td>Chạy lại trên RTX 3050 Ti</td><td>14.3%</td><td>41.5%</td><td>25.5%</td><td>63.4%</td><td>98</td></tr>
+      <tr><td><span class="origin new">Mới</span></td><td>DeepSeek-Coder-Instruct 1.3B · Plan-then-code</td><td>Chạy lại trên RTX 3050 Ti</td><td>16.0%</td><td>40.6%</td><td>28.0%</td><td>59.2%</td><td>100</td></tr>
+      <tr><td><span class="origin old">Cũ</span></td><td>GPT-3.5 · baseline theo báo cáo</td><td>Bảng bài báo gốc</td><td>27.0%</td><td>52.5%</td><td>—</td><td>—</td><td>100</td></tr>
+      <tr><td><span class="origin new">Mới</span></td><td>GPT-3.5 · CoT</td><td>ClassEval2</td><td>26.0%</td><td>50.4%</td><td>43.0%</td><td>69.7%</td><td>100</td></tr>
+      <tr><td><span class="origin new">Mới</span></td><td>GPT-3.5 · Few-shot</td><td>ClassEval2</td><td>25.5%</td><td>56.1%</td><td>50.0%</td><td>75.8%</td><td>98</td></tr>
+      <tr><td><span class="origin new">Mới</span></td><td>GPT-3.5 · Plan-then-code</td><td>ClassEval2</td><td>25.0%</td><td>57.8%</td><td>51.0%</td><td>75.7%</td><td>100</td></tr>
+      <tr><td><span class="origin new">Mới</span></td><td>Gemini 3.8 Flash · CoT</td><td>ClassEval2</td><td>39.0%</td><td>58.8%</td><td>58.0%</td><td>65.5%</td><td>100</td></tr>
+      <tr><td><span class="origin new">Mới</span></td><td>Gemini 3.8 Flash · Few-shot</td><td>ClassEval2</td><td>40.8%</td><td>59.6%</td><td>60.2%</td><td>66.1%</td><td>98</td></tr>
+      <tr><td><span class="origin new">Mới</span></td><td>Gemini 3.8 Flash · Plan-then-code</td><td>ClassEval2</td><td>47.0%</td><td>73.3%</td><td>76.0%</td><td>84.5%</td><td>100</td></tr>
+    </tbody></table></div>
+    <p class="report-note">Báo cáo còn đối chiếu SantaCoder cũ ở <em>chiến lược tốt nhất</em> (10.0% Class / 27.3% Method) với baseline GPU mới H (0.0% / 0.2%). Hai số cũ này thuộc chiến lược I trong JSON, nên không phải đối chứng cùng cấu hình H. GPT-3.5 baseline 27.0% / 52.5% được chép từ bảng bài báo trong báo cáo, có thể khác từng hàng H/I/C của JSON. DeepSeek không có kết quả trong bài báo gốc; báo cáo cũng chưa có kết quả GPT đời mới ngoài GPT-3.5.</p>
+    <ul class="report-findings">
+      <li>Gemini Plan-then-code cao hơn GPT-3.5 Plan-then-code 22.0 điểm phần trăm ở Class và 15.5 điểm ở Method.</li>
+      <li>Trong ba prompt DeepSeek local, CoT cao nhất về đạt toàn bộ kiểm thử; Plan-then-code cao nhất về C.partial.</li>
+      <li>Các lượt Few-shot có 98 tác vụ vì hai bài ví dụ được loại khỏi tập chấm; GPT-3.5 và Gemini là kết quả từ ClassEval2, không phải lượt chạy local trong project.</li>
+    </ul>
   </section>
   <div id="sourcePath" class="source"></div>
 </div>
 <script>
   const $ = id => document.getElementById(id);
-  const controls = ['sampling','quality','scope','mode','strategy','sort','search'];
+  const controls = ['sampling','quality','origin','scope','mode','strategy','prompt','sort','search'];
   let metrics = null;
   const percent = value => `${(100 * value).toFixed(1)}%`;
+  const promptLabel = prompt => prompt === 'Plan' ? 'Plan-then-code' : prompt;
+  const originLabel = origin => origin === 'old' ? 'Cũ · bài báo' : 'Mới · bổ sung';
+
+  function resultOrigin(raw) {
+    if (/^(?:ChatGLM|CodeGeeX|GPT-3\.5|GPT-4|Incoder|Instruct-CodeGen|Instruct-StarCoder|PolyCoder|SantaCoder|Vicuna|WizardCoder)_[HIC](?:\(greedy\))?$/i.test(raw)) return 'old';
+    return 'new';
+  }
 
   function parseName(raw) {
-    const gemini = raw.match(/^gemini_(cot|fewshot|plan)_greedy$/i);
-    if (gemini) {
-      const strategy = {cot: 'CoT', fewshot: 'Few-shot', plan: 'Plan'}[gemini[1].toLowerCase()];
-      return {model: `Gemini · ${strategy}`, strategy};
+    const apiPrompt = raw.match(/^(gemini|gpt35)_(cot|fewshot|plan)_greedy$/i);
+    if (apiPrompt) {
+      const prompt = {cot: 'CoT', fewshot: 'Few-shot', plan: 'Plan'}[apiPrompt[2].toLowerCase()];
+      return {model: apiPrompt[1].toLowerCase() === 'gemini' ? 'Gemini' : 'GPT-3.5', strategy: 'H', prompt};
     }
     let match = raw.match(/^(.+)_(?:class|method)_([HIC])_(?:greedy|t0\.2)$/i);
     if (!match) match = raw.match(/^(.+)_([HIC])(?:\(greedy\))?$/);
-    if (match) return {model: match[1], strategy: match[2].toUpperCase()};
-    return {model: raw, strategy: 'Khác'};
+    if (match) {
+      const styled = match[1].match(/^(.+)_(CoT|Few-shot|Plan)_?$/i);
+      if (styled) return {model: styled[1], strategy: match[2].toUpperCase(), prompt: {cot: 'CoT', 'few-shot': 'Few-shot', plan: 'Plan'}[styled[2].toLowerCase()]};
+      if (match[1] === 'SantaCoder_GPU') return {model: 'SantaCoder', strategy: 'H', prompt: 'Baseline'};
+      return {model: match[1], strategy: match[2].toUpperCase(), prompt: 'Baseline'};
+    }
+    return {model: raw, strategy: 'Khác', prompt: 'Khác'};
   }
   function localModel(name) { return !/^(gpt|gemini)/i.test(name); }
   function rowsForSelection() {
@@ -119,22 +178,27 @@
     const partial = $('quality').value === 'partial';
     let rows = Object.entries(group).map(([raw, values]) => {
       const parsed = parseName(raw);
-      return {raw, ...parsed,
+      return {raw, ...parsed, origin: resultOrigin(raw),
               classScore: Number(values[partial ? 'class_partial_success' : 'class_success']),
               methodScore: Number(values[partial ? 'fun_partial_success' : 'fun_success'])};
     }).filter(row => Number.isFinite(row.classScore) && Number.isFinite(row.methodScore));
+    const origin = $('origin').value;
+    if (origin !== 'all') rows = rows.filter(row => row.origin === origin);
     if ($('scope').value === 'benchmark') rows = rows.filter(row => row.strategy !== 'Khác');
     if ($('scope').value === 'local') rows = rows.filter(row => row.strategy !== 'Khác' && localModel(row.model));
     const strategy = $('strategy').value;
-    if (strategy !== 'all') rows = rows.filter(row => strategy === 'other' ? row.strategy === 'Khác' : row.strategy === strategy);
+    if (strategy !== 'all') rows = rows.filter(row => row.strategy === strategy);
+    const prompt = $('prompt').value;
+    if (prompt !== 'all') rows = rows.filter(row => row.prompt === prompt);
     const query = $('search').value.trim().toLowerCase();
-    if (query) rows = rows.filter(row => `${row.model} ${row.strategy}`.toLowerCase().includes(query));
+    if (query) rows = rows.filter(row => `${row.model} ${row.strategy} ${row.prompt}`.toLowerCase().includes(query));
     if ($('mode').value === 'best') {
       const best = new Map();
       for (const row of rows) {
-        const current = best.get(row.model);
+        const key = `${row.origin}:${row.model}`;
+        const current = best.get(key);
         if (!current || row.classScore > current.classScore ||
-            (row.classScore === current.classScore && row.methodScore > current.methodScore)) best.set(row.model, row);
+            (row.classScore === current.classScore && row.methodScore > current.methodScore)) best.set(key, row);
       }
       rows = [...best.values()];
     }
@@ -158,24 +222,27 @@
   function render() {
     const rows = rowsForSelection();
     $('rowCount').textContent = String(rows.length);
+    $('sourceCount').textContent = `${rows.filter(row => row.origin === 'old').length} cũ · ${rows.filter(row => row.origin === 'new').length} mới`;
     const bestClass = [...rows].sort((a,b) => b.classScore-a.classScore)[0];
     const bestMethod = [...rows].sort((a,b) => b.methodScore-a.methodScore)[0];
     $('bestClass').textContent = bestClass ? percent(bestClass.classScore) : '—';
-    $('bestClassName').textContent = bestClass ? `${bestClass.model} · ${bestClass.strategy}` : 'Không có dữ liệu';
+    $('bestClassName').textContent = bestClass ? `${bestClass.model} · ${bestClass.strategy} · ${promptLabel(bestClass.prompt)} · ${originLabel(bestClass.origin)}` : 'Không có dữ liệu';
     $('bestMethod').textContent = bestMethod ? percent(bestMethod.methodScore) : '—';
-    $('bestMethodName').textContent = bestMethod ? `${bestMethod.model} · ${bestMethod.strategy}` : 'Không có dữ liệu';
+    $('bestMethodName').textContent = bestMethod ? `${bestMethod.model} · ${bestMethod.strategy} · ${promptLabel(bestMethod.prompt)} · ${originLabel(bestMethod.origin)}` : 'Không có dữ liệu';
     $('chart').replaceChildren(); $('table').replaceChildren();
     if (!rows.length) { $('chart').append(node('div','empty','Không có kết quả phù hợp với bộ lọc.')); return; }
     for (const row of rows) {
       const chartRow = node('div','chart-row');
-      const label = node('div','row-label'); label.append(node('strong','',row.model),node('span','',`Chiến lược ${row.strategy}`));
+      const label = node('div','row-label'); label.append(node('strong','',row.model),node('span','',`${originLabel(row.origin)} · ${row.strategy} · ${promptLabel(row.prompt)}`));
       const bars = node('div','bars'); bars.append(barLine(row.classScore,'blue'),barLine(row.methodScore,'teal'));
       chartRow.append(label,bars); $('chart').append(chartRow);
 
       const tr = node('tr');
+      const origin = node('td'); origin.append(node('span',`origin ${row.origin}`,originLabel(row.origin)));
       const name = node('td','',row.model); name.title = row.raw;
       const strategy = node('td'); strategy.append(node('span','strategy',row.strategy));
-      tr.append(name,strategy,node('td','num',percent(row.classScore)),
+      const prompt = node('td'); prompt.append(node('span','strategy',promptLabel(row.prompt)));
+      tr.append(origin,name,strategy,prompt,node('td','num',percent(row.classScore)),
                 node('td','num',percent(row.methodScore)),
                 node('td','num',`${((row.methodScore-row.classScore)*100).toFixed(1)} điểm`));
       $('table').append(tr);
