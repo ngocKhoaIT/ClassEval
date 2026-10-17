@@ -110,6 +110,8 @@ and compositional generation)
 
 ## Usage
 
+Hướng dẫn bằng tiếng Việt để cài môi trường và chạy demo, sinh kết quả, chấm điểm: [SETUP_VA_CHAY_SOURCE.md](./SETUP_VA_CHAY_SOURCE.md).
+
 ### Local model demo
 
 For an NVIDIA GPU on Windows, install the CUDA-enabled environment with `venv\Scripts\python.exe -m pip install -r requirements-gpu.txt`. Start the app with `venv\Scripts\python.exe local_demo.py` so model inference uses that environment. Generated code is saved as JSON in `output/model_output`. The **So sánh chỉ số** page reads the merged `output/result/pass_at_k_result.json`. See [generation/README.md](./generation/README.md) for details.

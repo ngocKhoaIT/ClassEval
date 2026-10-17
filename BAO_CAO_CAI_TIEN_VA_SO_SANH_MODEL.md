@@ -38,7 +38,7 @@ Bảng dưới đây dùng **Pass@1 · greedy**. “Class” và “Method” l�
 | DeepSeek-Coder-Instruct 1.3B + CoT | Chạy mới trên RTX 3050 Ti | 17.0% | 45.6% | 27.0% | 67.7% | 100 |
 | DeepSeek-Coder-Instruct 1.3B + Few-shot | Chạy mới trên RTX 3050 Ti | 14.3% | 41.5% | 25.5% | 63.4% | 98 |
 | DeepSeek-Coder-Instruct 1.3B + Plan-then-code | Chạy mới trên RTX 3050 Ti | 16.0% | 40.6% | 28.0% | 59.2% | 100 |
-| GPT-3.5 Baseline | Bài báo gốc | 26.0% | 46.3% | 34.0% | 55.1% | 100 |
+| GPT-3.5 Baseline | Bài báo gốc | 27.0% | 52.5% | — | — | 100 |
 | GPT-3.5 + CoT | ClassEval2 | 26.0% | 50.4% | 43.0% | 69.7% | 100 |
 | GPT-3.5 + Few-shot | ClassEval2 | 25.5% | 56.1% | 50.0% | 75.8% | 98 |
 | GPT-3.5 + Plan-then-code | ClassEval2 | 25.0% | 57.8% | 51.0% | 75.7% | 100 |
@@ -47,19 +47,19 @@ Bảng dưới đây dùng **Pass@1 · greedy**. “Class” và “Method” l�
 | Gemini 3.8 Flash + Plan-then-code | ClassEval2 | **47.0%** | **73.3%** | **76.0%** | **84.5%** | 100 |
 | GPT model đời mới | Chưa có kết quả trong nguồn | — | — | — | — | — |
 
-### Đối chiếu dữ liệu local cũ và lượt chạy mới
+### Đối chiếu bài báo gốc và lượt chạy mới
 
-| Model / prompt | Cũ: Class / Method | Mới: Class / Method | Cũ: C.partial / M.partial | Mới: C.partial / M.partial | Tasks mới |
-|---|---:|---:|---:|---:|---:|
-| SantaCoder · baseline H, greedy | 2.0% / 3.0% | 0.0% / 0.2% | 3.0% / 8.0% | 1.0% / 4.2% | 100 |
-| SantaCoder + CoT | — | 0.0% / 0.0% | — | 0.0% / 1.4% | 100 |
-| SantaCoder + Few-shot | — | 0.0% / 0.0% | — | 0.0% / 1.0% | 98 |
-| SantaCoder + Plan-then-code | — | 0.0% / 0.0% | — | 0.0% / 0.0% | 100 |
-| DeepSeek-Coder-Instruct 1.3B + CoT | — | 17.0% / 45.6% | — | 27.0% / 67.7% | 100 |
-| DeepSeek-Coder-Instruct 1.3B + Few-shot | — | 14.3% / 41.5% | — | 25.5% / 63.4% | 98 |
-| DeepSeek-Coder-Instruct 1.3B + Plan-then-code | — | 16.0% / 40.6% | — | 28.0% / 59.2% | 100 |
+| Model / prompt | Bài báo gốc: Class / Method | Mới: Class / Method | Mới: C.partial / M.partial | Tasks mới |
+|---|---:|---:|---:|---:|
+| SantaCoder · baseline H, greedy | 10.0% / 27.3% | 0.0% / 0.2% | 1.0% / 4.2% | 100 |
+| SantaCoder + CoT | — | 0.0% / 0.0% | 0.0% / 1.4% | 100 |
+| SantaCoder + Few-shot | — | 0.0% / 0.0% | 0.0% / 1.0% | 98 |
+| SantaCoder + Plan-then-code | — | 0.0% / 0.0% | 0.0% / 0.0% | 100 |
+| DeepSeek-Coder-Instruct 1.3B + CoT | — | 17.0% / 45.6% | 27.0% / 67.7% | 100 |
+| DeepSeek-Coder-Instruct 1.3B + Few-shot | — | 14.3% / 41.5% | 25.5% / 63.4% | 98 |
+| DeepSeek-Coder-Instruct 1.3B + Plan-then-code | — | 16.0% / 40.6% | 28.0% / 59.2% | 100 |
 
-“Dữ liệu cũ” là kết quả SantaCoder H đã lưu trước lượt GPU mới. “Dữ liệu mới” lấy từ lần chạy dùng CUDA và các prompt cải tiến. Hai baseline cùng tên chiến lược nhưng không được xác nhận là chạy trong mọi điều kiện giống hệt nhau; vì vậy mức giảm là chênh lệch giữa hai kết quả đã lưu, chưa thể quy hoàn toàn cho GPU hay prompt. Các prompt SantaCoder CoT/Few-shot/Plan và DeepSeek không có kết quả cũ tương ứng trong nguồn hiện tại.
+Số SantaCoder trong bài báo là Pass@1 greedy tốt nhất trong ba chiến lược sinh; bài báo chỉ công bố full success Class/Method cho biểu đồ này, không có C.partial/M.partial tương ứng. Baseline mới của SantaCoder là Holistic trên CUDA. Vì chiến lược sinh giữa số “tốt nhất trong bài” và baseline mới không được giữ cố định, chênh lệch chỉ có ý nghĩa tham khảo, không phải đối chứng cùng cấu hình. DeepSeek-Coder-Instruct 1.3B không có trong bài báo gốc nên không có số cũ để điền.
 
 ## 3. Cách đọc và giới hạn hiện tại
 
